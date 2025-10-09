@@ -38,22 +38,22 @@ Transformo ideias em produtos digitais reais — de **landing pages otimizadas**
 
 ## 📊 GitHub Stats
 
-<!-- GitHub Stats -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=gustavo-lg&show_icons=true&theme=radical" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavo-lg&layout=compact&theme=radical" height="165" />
+  <!-- Stats Gerais -->
+  <img src="https://github-readme-stats.vercel.app/api?username=gustavo-lg&show_icons=true&count_private=true&theme=tokyonight&hide_border=false&border_radius=10" height="160" alt="GitHub Stats" />
+
+  <!-- Linguagens -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavo-lg&layout=compact&theme=tokyonight&hide_border=false&border_radius=10" height="160" alt="Top Linguagens" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=gustavo-lg&theme=tokyonight&border_radius=5" alt="GitHub Streak de Gustavo-LG" />
+  <!-- Streak -->
+  <img src="https://streak-stats.demolab.com/?user=gustavo-lg&theme=tokyonight&border_radius=10&hide_border=false" height="120" alt="GitHub Streak" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=gustavo-lg&theme=tokyonight&margin-w=10&margin-h=10" alt="Troféus do GitHub de Gustavo-LG" />
-</p>
-
-<p align="center">
-  <img src="https://github.com/gustavo-lg/gustavo-lg/blob/output/github-contribution-grid-snake.svg" alt="Animação de cobra das contribuições de Gustavo-LG" />
+  <!-- Troféus -->
+  <img src="https://github-profile-trophy.vercel.app/?username=gustavo-lg&theme=tokyonight&margin-w=10&margin-h=10" height="120" alt="Troféus GitHub" />
 </p>
 
 
