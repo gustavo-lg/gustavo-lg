@@ -39,8 +39,9 @@ Transformo ideias em produtos digitais reais — de **landing pages otimizadas**
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=GustavoGoncalves&show_icons=true&theme=radical" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GustavoGoncalves&layout=compact&theme=radical" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api?username=gustavo-lg&show_icons=true&theme=radical" height="165" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavo-lg&layout=compact&theme=radical" height="165" />
+
 </p>
 
 ---
