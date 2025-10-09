@@ -44,18 +44,17 @@ Transformo ideias em produtos digitais reais — de **landing pages otimizadas**
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavo-lg&layout=compact&theme=radical" height="165" />
 </p>
 
-<!-- GitHub Stats -->
-![Gustavo's GitHub stats](https://github-readme-stats.vercel.app/api?username=gustavo-lg&show_icons=true&theme=radical&hide_border=true&count_private=true)
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=gustavo-lg&theme=tokyonight&border_radius=5" alt="GitHub Streak de Gustavo-LG" />
+</p>
 
-![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=gustavo-lg&layout=compact&theme=radical&hide_border=true)
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=gustavo-lg&theme=tokyonight&margin-w=10&margin-h=10" alt="Troféus do GitHub de Gustavo-LG" />
+</p>
 
-![GitHub Contributions Snake](https://github.com/gustavo-lg/gustavo-lg/blob/output/github-contribution-grid-snake.svg)
-
-![Trophies](https://github-profile-trophy.vercel.app/?username=gustavo-lg&theme=tokyonight&margin-w=10&margin-h=10)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=gustavo-lg&theme=tokyonight&border_radius=5)
-
-![Additional Metrics](https://github-readme-metrics.vercel.app/api?username=gustavo-lg&template=classic&theme=tokyonight)
+<p align="center">
+  <img src="https://github.com/gustavo-lg/gustavo-lg/blob/output/github-contribution-grid-snake.svg" alt="Animação de cobra das contribuições de Gustavo-LG" />
+</p>
 
 
 ---
