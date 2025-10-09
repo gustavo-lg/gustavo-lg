@@ -8,8 +8,6 @@
 [![Email](https://img.shields.io/badge/📧_Email-gustavolgoncalves05@gmail.com-EA4335?style=for-the-badge)](mailto:gustavolgoncalves05@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Conectar-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/gustavo-lg)
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Transformando+ideias+em+produtos;Especialista+em+Next.js+React+TypeScript;Automação+com+IA;Arquitetura+de+SaaS" alt="Typing SVG" />
-
 
 </div>
 
