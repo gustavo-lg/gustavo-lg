@@ -41,6 +41,12 @@ Transformo ideias em produtos digitais reais — de **landing pages otimizadas**
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=gustavo-lg&show_icons=true&theme=radical" height="165" />
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavo-lg&layout=compact&theme=radical" height="165" />
+![Snake animation](https://github.com/gustavo-lg/gustavo-lg/blob/output/github-contribution-grid-snake.svg)
+![trophy](https://github-profile-trophy.vercel.app/?username=gustavo-lg&theme=tokyonight&margin-w=10&margin-h=10)
+
+![GitHub Streak](https://streak-stats.demolab.com?user=gustavo-lg&theme=tokyonight&border_radius=5)
+
+![Metrics](https://github-readme-metrics.vercel.app/api?username=gustavo-lg&template=classic&theme=tokyonight)
 
 </p>
 
