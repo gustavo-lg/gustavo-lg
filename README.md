@@ -25,7 +25,7 @@ Com experiência em **arquitetura de SaaS, integração de APIs e automação co
 const gustavo = {
   codigo: ["TypeScript", "JavaScript", "Python", "SQL"],
   frameworks: {
-    frontend: ["Next.js", "React", "Tailwind CSS", "Shadcn/ui"],
+    frontend: ["Next.js", "React", "Tailwind CSS", "Material UI"],
     backend: ["Node.js", "Express", "Firebase", "Supabase"],
     mobile: ["FlutterFlow", "React Native"]
   },
