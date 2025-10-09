@@ -1,12 +1,12 @@
 <div align="center">
   
-# 👋 Gustavo Gonçalves
+# 👋 Gustavo L Gonçalves
 
 ### Desenvolvedor Fullstack | Especialista em Soluções SaaS & IA
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfólio-gustavogoncalves.dev.br-00D9FF?style=for-the-badge)](https://gustavogoncalves.dev.br)
 [![Email](https://img.shields.io/badge/📧_Email-gustavolgoncalves05@gmail.com-EA4335?style=for-the-badge)](mailto:gustavolgoncalves05@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Conectar-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/gustavo-goncalves)
+[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Conectar-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/gustavo-lg)
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Transformando+ideias+em+produtos+digitais;Especialista+em+Next.js+%2B+React+%2B+TypeScript;Automação+inteligente+com+IA;Arquitetura+de+SaaS+escaláveis" alt="Typing SVG" />
 
@@ -54,13 +54,13 @@ const gustavo = {
 ![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Shadcn/ui](https://img.shields.io/badge/Shadcn/ui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)
+![MUI](https://img.shields.io/badge/MUI-007FFF?style=for-the-badge&logo=mui&logoColor=white)
 
 ### Backend & Database
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
 ### Integrações & Tools
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
