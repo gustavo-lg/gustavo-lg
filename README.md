@@ -13,6 +13,23 @@
 
 ---
 
+## 📊 GitHub Analytics
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=gustavo-lg&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavo-lg&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF"/>
+</div>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=gustavo-lg&theme=tokyonight&hide_border=true&background=0D1117&ring=00D9FF&fire=00D9FF&currStreakLabel=00D9FF" alt="GitHub Streak" />
+</div>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=gustavo-lg&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7" />
+</div>
+
+---
+
 ## 🎯 Sobre Mim
 
 Sou **desenvolvedor fullstack** apaixonado por criar soluções digitais que geram impacto real. Minha expertise está em transformar conceitos complexos em produtos elegantes, escaláveis e de alta performance.
@@ -129,23 +146,6 @@ const gustavo = {
 **Tech:** FlutterFlow, Supabase, Cloud Functions
 
 </details>
-
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=gustavo-lg&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavo-lg&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF"/>
-</div>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=gustavo-lg&theme=tokyonight&hide_border=true&background=0D1117&ring=00D9FF&fire=00D9FF&currStreakLabel=00D9FF" alt="GitHub Streak" />
-</div>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=gustavo-lg&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7" />
-</div>
 
 ---
 
