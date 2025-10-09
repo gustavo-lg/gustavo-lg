@@ -48,7 +48,7 @@ Transformo ideias em produtos digitais reais — de **landing pages otimizadas**
 
 <p align="center">
   <!-- Streak -->
-  <img src="https://streak-stats.demolab.com/?user=gustavo-lg&theme=tokyonight&border_radius=10&hide_border=false" height="120" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com/?user=gustavo-lg&theme=tokyonight&border_radius=10&hide_border=false" width="673" height="160" alt="GitHub Streak" />
 </p>
 
 <p align="center">
