@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 280" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913" />
+      <stop offset="50%" stop-color="#0B1120" />
+      <stop offset="100%" stop-color="#070B14" />
+    </linearGradient>
+
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D9FF" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+
+    <linearGradient id="glowLinear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D9FF" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#00D9FF" stop-opacity="0.05" />
+    </linearGradient>
+
+    <radialGradient id="auroraGlow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#00D9FF" stop-opacity="0.18" />
+      <stop offset="50%" stop-color="#7C3AED" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#070B14" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="auroraGlowLeft" cx="15%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#070B14" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="cyberGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-opacity="0.45" />
+      <circle cx="30" cy="0" r="1" fill="#00D9FF" fill-opacity="0.3" />
+    </pattern>
+
+    <!-- Filter for Glows -->
+    <filter id="neonBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="badgeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    @keyframes rotateGlow {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes textSlide {
+      0%, 28% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      33%, 95% {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+    }
+
+    @keyframes textSlideTwo {
+      0%, 30% {
+        opacity: 0;
+        transform: translateY(-12px);
+      }
+      35%, 62% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      67%, 100% {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+    }
+
+    @keyframes textSlideThree {
+      0%, 64% {
+        opacity: 0;
+        transform: translateY(-12px);
+      }
+      69%, 95% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+    }
+
+    @keyframes borderShift {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 2400; }
+    }
+
+    @keyframes floatParticle {
+      0%, 100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-8px) translateX(6px); }
+    }
+
+    .base-card {
+      fill: url(#bgGrad);
+      stroke: #1E293B;
+      stroke-width: 1.5;
+    }
+
+    .animated-border {
+      stroke: url(#neonCyan);
+      stroke-width: 1.5;
+      stroke-dasharray: 120 480;
+      animation: borderShift 16s linear infinite;
+    }
+
+    .pulse-green {
+      transform-origin: 52px 42px;
+      animation: pulseDot 2s ease-in-out infinite;
+    }
+
+    .role-one {
+      animation: textSlide 10s infinite;
+    }
+
+    .role-two {
+      animation: textSlideTwo 10s infinite;
+    }
+
+    .role-three {
+      animation: textSlideThree 10s infinite;
+    }
+
+    .floating-dot {
+      animation: floatParticle 5s ease-in-out infinite;
+    }
+
+    .floating-dot-slow {
+      animation: floatParticle 7s ease-in-out infinite reverse;
+    }
+  </style>
+
+  <!-- Card Background -->
+  <rect x="2" y="2" width="916" height="276" rx="16" class="base-card" />
+  
+  <!-- Cyber Grid -->
+  <rect x="2" y="2" width="916" height="276" rx="16" fill="url(#cyberGrid)" />
+
+  <!-- Ambient Aurora Glows -->
+  <rect x="2" y="2" width="916" height="276" rx="16" fill="url(#auroraGlow)" />
+  <rect x="2" y="2" width="916" height="276" rx="16" fill="url(#auroraGlowLeft)" />
+
+  <!-- Glowing Animated Border -->
+  <rect x="2" y="2" width="916" height="276" rx="16" fill="none" class="animated-border" />
+
+  <!-- Top Status Bar / Capsule Badge -->
+  <g transform="translate(36, 26)">
+    <rect x="0" y="0" width="285" height="32" rx="16" fill="#0D1527" stroke="#1E293B" stroke-width="1" />
+    <circle cx="16" cy="16" r="5" fill="#10B981" class="pulse-green" />
+    <circle cx="16" cy="16" r="9" fill="#10B981" fill-opacity="0.25" class="pulse-green" />
+    <text x="32" y="20" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="1.2">DISPONÍVEL PARA PROJETOS</text>
+  </g>
+
+  <!-- Top Right Code Tag -->
+  <g transform="translate(735, 28)">
+    <rect x="0" y="0" width="145" height="28" rx="8" fill="#0D1527" stroke="#1E293B" stroke-width="0.8" />
+    <text x="72" y="18" fill="#00D9FF" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="0.5">&lt;dev/saas-ia&gt;</text>
+  </g>
+
+  <!-- Main Hero Content -->
+  <g transform="translate(40, 115)">
+    <!-- Name with Gradient -->
+    <text x="0" y="0" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="800" letter-spacing="-0.8">Gustavo L Gonçalves</text>
+    <text x="442" y="-12" fill="#00D9FF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700">✦</text>
+
+    <!-- Subtitle Role Slider (Animated Keyframes) -->
+    <g transform="translate(0, 34)">
+      <!-- Role 1 -->
+      <g class="role-one">
+        <text x="0" y="0" fill="#00D9FF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="600" letter-spacing="0.2">
+          Fullstack Architect &amp; Especialista em Soluções SaaS
+        </text>
+      </g>
+      <!-- Role 2 -->
+      <g class="role-two">
+        <text x="0" y="0" fill="#A78BFA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="600" letter-spacing="0.2">
+          Sistemas Autônomos, Agentes &amp; Automação com IA
+        </text>
+      </g>
+      <!-- Role 3 -->
+      <g class="role-three">
+        <text x="0" y="0" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="600" letter-spacing="0.2">
+          Next.js 15 • TypeScript • Cloud Engineering &amp; APIs
+        </text>
+      </g>
+    </g>
+
+    <!-- Short Bio statement -->
+    <text x="0" y="66" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="400">
+      Transformando conceitos complexos em produtos digitais escaláveis, ultra-velozes e lucrativos.
+    </text>
+  </g>
+
+  <!-- Bottom Metric Pills -->
+  <g transform="translate(40, 222)">
+    <!-- Pill 1: SaaS Experience -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="170" height="34" rx="8" fill="#0D1527" stroke="#1E293B" stroke-width="1" />
+      <text x="14" y="21" fill="#00D9FF" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" font-weight="700">⚡ 50+</text>
+      <text x="64" y="21" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500">Projetos Feitos</text>
+    </g>
+
+    <!-- Pill 2: Performance -->
+    <g transform="translate(182, 0)">
+      <rect x="0" y="0" width="180" height="34" rx="8" fill="#0D1527" stroke="#1E293B" stroke-width="1" />
+      <text x="14" y="21" fill="#10B981" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" font-weight="700">🚀 95+</text>
+      <text x="66" y="21" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500">Lighthouse Score</text>
+    </g>
+
+    <!-- Pill 3: Uptime / Reliability -->
+    <g transform="translate(374, 0)">
+      <rect x="0" y="0" width="165" height="34" rx="8" fill="#0D1527" stroke="#1E293B" stroke-width="1" />
+      <text x="14" y="21" fill="#8B5CF6" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" font-weight="700">💎 99.9%</text>
+      <text x="80" y="21" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500">Confiabilidade</text>
+    </g>
+
+    <!-- Pill 4: Modern Core -->
+    <g transform="translate(551, 0)">
+      <rect x="0" y="0" width="195" height="34" rx="8" fill="#0D1527" stroke="#1E293B" stroke-width="1" />
+      <text x="14" y="21" fill="#F43F5E" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" font-weight="700">🤖 AI-First</text>
+      <text x="96" y="21" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500">Arquitetura Inteligente</text>
+    </g>
+  </g>
+
+  <!-- Decorative Glowing Dots / Constellation elements -->
+  <circle cx="830" cy="110" r="2" fill="#00D9FF" class="floating-dot" />
+  <circle cx="780" cy="180" r="1.5" fill="#8B5CF6" class="floating-dot-slow" />
+  <circle cx="860" cy="210" r="2" fill="#38BDF8" class="floating-dot" />
+  <path d="M 830 110 L 860 210" stroke="#1E293B" stroke-width="0.6" stroke-dasharray="3 3" opacity="0.6" />
+</svg>
