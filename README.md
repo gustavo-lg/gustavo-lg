@@ -21,8 +21,7 @@
       <br/>
       <img src="./.github/assets/terminal.svg" width="100%" alt="Gustavo Terminal Session" />
     </td>
-    <td width="42%" valign="top" style="padding-left: 20px;">
-      <br/>
+    <td width="42%" valign="middle" style="padding-left: 24px;">
       <h3>⚡ Sobre Mim &amp; Arquitetura</h3>
       <p>
         Desenvolvedor Fullstack com foco em <b>soluções escaláveis, SaaS de alta performance e automações inteligentes com IA</b>.
@@ -30,12 +29,6 @@
       <p>
         Combino código limpo com arquiteturas modernas para transformar ideias complexas em produtos prontos para produção, com velocidade extrema e máxima confiabilidade.
       </p>
-      <ul>
-        <li>🚀 <b>Next.js 15 &amp; TypeScript:</b> SSR, RSC, App Router &amp; Server Actions</li>
-        <li>🤖 <b>IA Generativa:</b> Integração de LLMs, agentes autônomos e pipelines n8n</li>
-        <li>💳 <b>Monetização:</b> Stripe, Hotmart e gateways com webhooks seguros</li>
-        <li>⚡ <b>Core Web Vitals:</b> Foco em notas 95+ no Google Lighthouse</li>
-      </ul>
     </td>
   </tr>
 </table>
