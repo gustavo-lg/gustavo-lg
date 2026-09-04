@@ -7,22 +7,8 @@
 
 <br/><br/>
 
-<!-- QUICK ACTION CAPSULES -->
-<p align="center">
-  <a href="https://gustavogoncalves.dev.br">
-    <img src="https://img.shields.io/badge/🌐_Portfólio_Oficial-gustavogoncalves.dev.br-00D9FF?style=for-the-badge&labelColor=080C14" alt="Portfolio" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://linkedin.com/in/gustavo-lg">
-    <img src="https://img.shields.io/badge/💼_LinkedIn-gustavo--lg-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=080C14" alt="LinkedIn" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="mailto:gustavolgoncalves05@gmail.com">
-    <img src="https://img.shields.io/badge/📧_Email-gustavolgoncalves05@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=080C14" alt="Email" />
-  </a>
-</p>
-
-<br/>
+<!-- MATRIX DIGITAL RAIN CONTRIBUTION GRID -->
+<img src="./.github/assets/matrix-grid.svg" alt="Matrix Digital Rain Contribution Grid" width="100%" />
 
 </div>
 
@@ -90,76 +76,9 @@
 
 <img src="./.github/assets/divider.svg" width="100%" alt="Divider" />
 
-<!-- BENTO ROW 3: FEATURED PROJECTS & SOLUTIONS -->
+<!-- BENTO ROW 3: GITHUB ACTIVITY & STATS -->
 <div align="center">
-  <h2>🚀 Soluções em Produção &amp; Projetos em Destaque</h2>
-</div>
-
-<table border="0" cellspacing="12" cellpadding="16" width="100%">
-  <tr>
-    <td width="50%" bgcolor="#0B1120" style="border-radius: 12px; border: 1px solid #1E293B;">
-      <h3>🤖 Plataforma SaaS com IA Autônoma</h3>
-      <p>Ecossistema completo com cobrança recorrente, chatbots cognitivos integrados via OpenAI/Claude e painel de métricas analíticas em tempo real.</p>
-      <p>
-        <code>Next.js 15</code> • <code>TypeScript</code> • <code>Supabase</code> • <code>OpenAI API</code> • <code>Stripe</code>
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Status-Produção-10B981?style=flat-square" alt="Status" />
-        <img src="https://img.shields.io/badge/Tipo-SaaS_B2B-00D9FF?style=flat-square" alt="Tipo" />
-      </p>
-    </td>
-    <td width="50%" bgcolor="#0B1120" style="border-radius: 12px; border: 1px solid #1E293B;">
-      <h3>💼 Websites Corporativos Ultra-Velozes</h3>
-      <p>Aplicações web modernas desenvolvidas com App Router, renderização híbrida (SSR/ISR) e conformidade estrita de SEO avançado e acessibilidade (WCAG).</p>
-      <p>
-        <code>Next.js 15</code> • <code>Tailwind CSS</code> • <code>Shadcn/ui</code> • <code>Cloudflare Edge</code>
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Lighthouse-98%2F100-10B981?style=flat-square" alt="Lighthouse" />
-        <img src="https://img.shields.io/badge/Design-Cyber--Glass-8B5CF6?style=flat-square" alt="Design" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" bgcolor="#0B1120" style="border-radius: 12px; border: 1px solid #1E293B;">
-      <h3>🔗 Sistema de Automação Multi-Canal</h3>
-      <p>Orquestração de eventos e integrações corporativas com n8n, webhooks assíncronos e mensageria inteligente via WhatsApp Business API.</p>
-      <p>
-        <code>n8n</code> • <code>Node.js</code> • <code>WhatsApp API</code> • <code>Firebase</code>
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Automação-24%2F7-38BDF8?style=flat-square" alt="Automação" />
-        <img src="https://img.shields.io/badge/Uptime-99.9%25-10B981?style=flat-square" alt="Uptime" />
-      </p>
-    </td>
-    <td width="50%" bgcolor="#0B1120" style="border-radius: 12px; border: 1px solid #1E293B;">
-      <h3>📸 App Mobile de Mosaicos Visuais</h3>
-      <p>Aplicativo móvel multiplataforma com processamento inteligente de fotos, renderização dinâmica de mosaicos e exportação de relatórios em PDF de alta definição.</p>
-      <p>
-        <code>FlutterFlow</code> • <code>Supabase</code> • <code>Cloud Functions</code>
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Plataforma-iOS_%7C_Android-F59E0B?style=flat-square" alt="Mobile" />
-        <img src="https://img.shields.io/badge/Engine-Cloud_Storage-00D9FF?style=flat-square" alt="Engine" />
-      </p>
-    </td>
-  </tr>
-</table>
-
-<img src="./.github/assets/divider.svg" width="100%" alt="Divider" />
-
-<!-- BENTO ROW 4: GITHUB ACTIVITY & ANIMATED SNAKE -->
-<div align="center">
-  <h2>📊 Atividade &amp; Estatísticas em Tempo Real</h2>
-
-  <!-- CONTRIBUTION SNAKE GAME -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gustavo-lg/gustavo-lg/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gustavo-lg/gustavo-lg/output/github-contribution-grid-snake.svg">
-    <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/gustavo-lg/gustavo-lg/output/github-contribution-grid-snake-dark.svg" width="100%" />
-  </picture>
-
-  <br/><br/>
+  <h2>📊 Métricas &amp; Estatísticas em Produção</h2>
 
   <!-- GITHUB STREAK STATS -->
   <img src="https://streak-stats.demolab.com?user=gustavo-lg&theme=tokyonight&hide_border=true&background=080C14&ring=00D9FF&fire=00D9FF&currStreakLabel=00D9FF&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" />
