@@ -55,20 +55,5 @@
 
   <br/><br/>
 
-  <!-- QUICK ACTION PILLS -->
-  <p align="center">
-    <a href="https://gustavogoncalves.dev.br">
-      <img src="https://img.shields.io/badge/🌐_Portfólio-gustavogoncalves.dev.br-00D9FF?style=for-the-badge&labelColor=080C14" alt="Portfólio" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="mailto:gustavolgoncalves05@gmail.com">
-      <img src="https://img.shields.io/badge/📧_Email-gustavolgoncalves05@gmail.com-8B5CF6?style=for-the-badge&labelColor=080C14" alt="Email" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://linkedin.com/in/gustavo-lg">
-      <img src="https://img.shields.io/badge/💼_LinkedIn-gustavo--lg-0A66C2?style=for-the-badge&labelColor=080C14" alt="LinkedIn" />
-    </a>
-    &nbsp;&nbsp;
-    <img src="https://komarev.com/ghpvc/?username=gustavo-lg&color=00D9FF&style=for-the-badge&label=VISITAS" alt="Profile Views" />
-  </p>
+  
 </div>
