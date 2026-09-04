@@ -7,6 +7,11 @@
 
 <br/><br/>
 
+<!-- STATIC METRICS & ANALYTICS (100% UPTIME) -->
+<img src="./.github/assets/stats-card.svg" width="100%" alt="GitHub Metrics &amp; Analytics" />
+
+<br/><br/>
+
 <!-- MATRIX DIGITAL RAIN CONTRIBUTION GRID -->
 <img src="./.github/assets/matrix-grid.svg" alt="Matrix Digital Rain Contribution Grid" width="100%" />
 
@@ -69,20 +74,6 @@
 
 <img src="./.github/assets/divider.svg" width="100%" alt="Divider" />
 
-<!-- BENTO ROW 3: GITHUB ACTIVITY & STATS -->
-<div align="center">
-  <h2>📊 Métricas &amp; Estatísticas em Produção</h2>
-
-  <!-- GITHUB STREAK STATS -->
-  <img src="https://streak-stats.demolab.com?user=gustavo-lg&theme=tokyonight&hide_border=true&background=080C14&ring=00D9FF&fire=00D9FF&currStreakLabel=00D9FF&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" />
-
-  <br/><br/>
-
-  <!-- STATIC METRICS & ANALYTICS (100% UPTIME) -->
-  <img src="./.github/assets/stats-card.svg" width="100%" alt="GitHub Metrics &amp; Analytics" />
-</div>
-
-<img src="./.github/assets/divider.svg" width="100%" alt="Divider" />
 
 <!-- BENTO ROW 5: CALL TO ACTION & FOOTER -->
 <div align="center">
