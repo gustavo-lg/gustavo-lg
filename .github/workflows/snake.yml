@@ -22,6 +22,14 @@ jobs:
         with:
           node-version: 20
 
+      - name: Prepare dist and Generate Static Stats
+        run: |
+          mkdir -p dist
+          node .github/scripts/generate-stats.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+
       - name: Generate snake SVGs
         uses: Platane/snk@v3
         with:
@@ -30,11 +38,8 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Generate Static Profile Stats Card
-        run: node .github/scripts/generate-stats.mjs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+      - name: Fix Runner Permissions
+        run: sudo chown -R $USER:$USER dist
 
       - name: Push all static assets to "output" branch
         uses: crazy-max/ghaction-github-pages@v4
