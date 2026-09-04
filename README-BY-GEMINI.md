@@ -5,20 +5,24 @@
   <img src="./.github/assets/hero-banner.svg" alt="Gustavo L Gonçalves - Hero Banner" width="100%" />
 </a>
 
-<br/>
+<br/><br/>
 
 <!-- QUICK ACTION CAPSULES -->
 <p align="center">
   <a href="https://gustavogoncalves.dev.br">
     <img src="https://img.shields.io/badge/🌐_Portfólio_Oficial-gustavogoncalves.dev.br-00D9FF?style=for-the-badge&labelColor=080C14" alt="Portfolio" />
   </a>
+  &nbsp;&nbsp;
   <a href="https://linkedin.com/in/gustavo-lg">
     <img src="https://img.shields.io/badge/💼_LinkedIn-gustavo--lg-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=080C14" alt="LinkedIn" />
   </a>
+  &nbsp;&nbsp;
   <a href="mailto:gustavolgoncalves05@gmail.com">
     <img src="https://img.shields.io/badge/📧_Email-gustavolgoncalves05@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=080C14" alt="Email" />
   </a>
 </p>
+
+<br/>
 
 </div>
 
@@ -162,8 +166,8 @@
 
   <br/><br/>
 
-  <!-- GITHUB TROPHIES -->
-  <img src="https://github-profile-trophy.vercel.app/?username=gustavo-lg&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7" alt="GitHub Trophies" />
+  <!-- STATIC METRICS & ANALYTICS (100% UPTIME) -->
+  <img src="./.github/assets/stats-card.svg" width="100%" alt="GitHub Metrics &amp; Analytics" />
 </div>
 
 <img src="./.github/assets/divider.svg" width="100%" alt="Divider" />
