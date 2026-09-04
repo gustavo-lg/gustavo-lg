@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 230" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ctaBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080D1A" />
+      <stop offset="50%" stop-color="#070C18" />
+      <stop offset="100%" stop-color="#040711" />
+    </linearGradient>
+
+    <linearGradient id="neonCtaBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D9FF" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#00D9FF" />
+    </linearGradient>
+
+    <radialGradient id="ctaCenterGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#00D9FF" stop-opacity="0.14" />
+      <stop offset="60%" stop-color="#7C3AED" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#080D1A" stop-opacity="0" />
+    </radialGradient>
+
+    <pattern id="ctaGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1E293B" stroke-width="0.6" stroke-opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseLiveCta {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.85); }
+    }
+    @keyframes borderGlowLoop {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 2100; }
+    }
+
+    .pulse-cta {
+      transform-origin: 307px 28px;
+      animation: pulseLiveCta 2s ease-in-out infinite;
+    }
+
+    .border-anim {
+      stroke: url(#neonCtaBorder);
+      stroke-width: 1.5;
+      stroke-dasharray: 100 400;
+      animation: borderGlowLoop 14s linear infinite;
+    }
+
+    .code-font {
+      font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+    }
+    .main-font {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+  </style>
+
+  <!-- Card Background -->
+  <rect x="2" y="2" width="836" height="226" rx="16" fill="url(#ctaBg)" stroke="#1E293B" stroke-width="1.5" />
+  <rect x="2" y="2" width="836" height="226" rx="16" fill="url(#ctaGrid)" />
+  <rect x="2" y="2" width="836" height="226" rx="16" fill="url(#ctaCenterGlow)" />
+
+  <!-- Animated Border Glow -->
+  <rect x="2" y="2" width="836" height="226" rx="16" fill="none" class="border-anim" />
+
+  <!-- Top Status Badge (Centered) -->
+  <g transform="translate(280, 16)">
+    <rect x="0" y="0" width="280" height="26" rx="13" fill="#091814" stroke="#10B981" stroke-width="0.8" />
+    <circle cx="16" cy="13" r="4.5" fill="#10B981" class="pulse-cta" />
+    <text x="30" y="17" fill="#E2E8F0" class="code-font" font-size="10.5" font-weight="600" letter-spacing="0.5">DISPONÍVEL PARA PROJETOS &amp; SAAS</text>
+  </g>
+
+  <!-- Main Headline -->
+  <text x="420" y="80" fill="#FFFFFF" class="main-font" font-size="25" font-weight="800" text-anchor="middle" letter-spacing="-0.5">
+    Vamos Construir Algo Extraordinário?
+  </text>
+
+  <!-- Subtitle -->
+  <text x="420" y="108" fill="#94A3B8" class="main-font" font-size="13" font-weight="400" text-anchor="middle">
+    Aberto para criação de plataformas SaaS escaláveis, agentes de IA e consultoria de alto impacto.
+  </text>
+
+  <!-- 3 Interactive Contact Capsules (Centered) -->
+  <g transform="translate(56, 140)">
+    <!-- Capsule 1: Portfolio -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="232" height="38" rx="10" fill="#0B132B" stroke="#00D9FF" stroke-width="1" stroke-opacity="0.6" />
+      <text x="24" y="23" fill="#00D9FF" class="code-font" font-size="12" font-weight="700">🌐 gustavogoncalves.dev.br</text>
+    </g>
+
+    <!-- Capsule 2: Email -->
+    <g transform="translate(248, 0)">
+      <rect x="0" y="0" width="254" height="38" rx="10" fill="#0B132B" stroke="#8B5CF6" stroke-width="1" stroke-opacity="0.6" />
+      <text x="18" y="23" fill="#C084FC" class="code-font" font-size="11.5" font-weight="700">📧 gustavolgoncalves05@gmail</text>
+    </g>
+
+    <!-- Capsule 3: LinkedIn -->
+    <g transform="translate(518, 0)">
+      <rect x="0" y="0" width="210" height="38" rx="10" fill="#0B132B" stroke="#0A66C2" stroke-width="1" stroke-opacity="0.6" />
+      <text x="24" y="23" fill="#38BDF8" class="code-font" font-size="12" font-weight="700">💼 /in/gustavo-lg</text>
+    </g>
+  </g>
+
+  <!-- Bottom Subtext / Brand Signoff -->
+  <text x="420" y="206" fill="#64748B" class="main-font" font-size="11" font-style="italic" text-anchor="middle">
+    ✦ Construindo o futuro com código limpo, arquiteturas escaláveis e inteligência artificial.
+  </text>
+</svg>

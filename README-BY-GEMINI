@@ -42,59 +42,33 @@
 
 <!-- BENTO ROW 2: TECH STACK ECOSYSTEM -->
 <div align="center">
-  <h2>🛠️ Ecossistema &amp; Stack Tecnológica</h2>
-  <p><i>As ferramentas e linguagens que utilizo diariamente para criar produtos excepcionais:</i></p>
-
-  <br/>
-
-  <!-- FRONTEND -->
-  <p>
-    <b>Frontend &amp; Experiência do Usuário</b><br/>
-    <a href="https://skillicons.dev">
-      <img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,materialui,html,css&theme=dark" alt="Frontend Stack" />
-    </a>
-  </p>
-
-  <!-- BACKEND & DATA -->
-  <p>
-    <b>Backend, Bancos de Dados &amp; Cloud</b><br/>
-    <a href="https://skillicons.dev">
-      <img src="https://skillicons.dev/icons?i=nodejs,express,supabase,firebase,postgres,mongodb,python&theme=dark" alt="Backend Stack" />
-    </a>
-  </p>
-
-  <!-- TOOLS, AI & DEVOPS -->
-  <p>
-    <b>IA, Automações &amp; Infraestrutura</b><br/>
-    <a href="https://skillicons.dev">
-      <img src="https://skillicons.dev/icons?i=docker,git,github,vscode,postman,flutter,figma,vercel&theme=dark" alt="DevOps &amp; Tools" />
-    </a>
-  </p>
+  <img src="./.github/assets/tech-stack.svg" width="100%" alt="Ecossistema &amp; Stack Tecnológica" />
 </div>
 
 <img src="./.github/assets/divider.svg" width="100%" alt="Divider" />
 
-
-<!-- BENTO ROW 5: CALL TO ACTION & FOOTER -->
+<!-- BENTO ROW 3: CALL TO ACTION & FOOTER -->
 <div align="center">
-  <h2>🤝 Vamos Construir Algo Extraordinário?</h2>
-  <p>Estou aberto para desenvolvimento de novos produtos SaaS, integrações de IA e consultoria técnica.</p>
+  <a href="https://gustavogoncalves.dev.br" target="_blank">
+    <img src="./.github/assets/connect-card.svg" width="100%" alt="Vamos Construir Algo Extraordinário?" />
+  </a>
 
-  <br/>
+  <br/><br/>
 
-  <p>
+  <!-- QUICK ACTION PILLS -->
+  <p align="center">
     <a href="https://gustavogoncalves.dev.br">
-      <img src="https://img.shields.io/badge/🚀_Iniciar_um_Projeto-gustavogoncalves.dev.br-00D9FF?style=for-the-badge&labelColor=080C14" alt="Iniciar Projeto" />
+      <img src="https://img.shields.io/badge/🌐_Portfólio-gustavogoncalves.dev.br-00D9FF?style=for-the-badge&labelColor=080C14" alt="Portfólio" />
     </a>
     &nbsp;&nbsp;
     <a href="mailto:gustavolgoncalves05@gmail.com">
-      <img src="https://img.shields.io/badge/💬_Falar_Diretamente-gustavolgoncalves05@gmail.com-8B5CF6?style=for-the-badge&labelColor=080C14" alt="Contato" />
+      <img src="https://img.shields.io/badge/📧_Email-gustavolgoncalves05@gmail.com-8B5CF6?style=for-the-badge&labelColor=080C14" alt="Email" />
     </a>
+    &nbsp;&nbsp;
+    <a href="https://linkedin.com/in/gustavo-lg">
+      <img src="https://img.shields.io/badge/💼_LinkedIn-gustavo--lg-0A66C2?style=for-the-badge&labelColor=080C14" alt="LinkedIn" />
+    </a>
+    &nbsp;&nbsp;
+    <img src="https://komarev.com/ghpvc/?username=gustavo-lg&color=00D9FF&style=for-the-badge&label=VISITAS" alt="Profile Views" />
   </p>
-
-  <br/>
-
-  <img src="https://komarev.com/ghpvc/?username=gustavo-lg&color=00D9FF&style=for-the-badge&label=VISITAS+NO+PERFIL" alt="Profile Views" />
-
-  <p><sub><i>"Construindo o futuro com arquiteturas escaláveis, código limpo e inteligência artificial."</i></sub></p>
 </div>

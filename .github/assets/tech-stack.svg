@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 296" width="100%" height="100%">
+  <defs>
+    <linearGradient id="techCardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080D1A" />
+      <stop offset="50%" stop-color="#050914" />
+      <stop offset="100%" stop-color="#070B14" />
+    </linearGradient>
+
+    <linearGradient id="colBorderCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D9FF" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#00D9FF" stop-opacity="0.05" />
+    </linearGradient>
+
+    <linearGradient id="colBorderPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.05" />
+    </linearGradient>
+
+    <linearGradient id="colBorderGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.05" />
+    </linearGradient>
+
+    <pattern id="techGridPattern" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1E293B" stroke-width="0.6" stroke-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseDotTech {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.85); }
+    }
+
+    .pulse-tech {
+      transform-origin: 792px 28px;
+      animation: pulseDotTech 2s ease-in-out infinite;
+    }
+
+    .code-font {
+      font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+    }
+    .main-font {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+  </style>
+
+  <!-- Card Background -->
+  <rect x="2" y="2" width="836" height="292" rx="14" fill="url(#techCardBg)" stroke="#1E293B" stroke-width="1.5" />
+  <rect x="2" y="2" width="836" height="292" rx="14" fill="url(#techGridPattern)" />
+
+  <!-- Top Title Header -->
+  <g transform="translate(28, 28)">
+    <text x="0" y="0" fill="#00D9FF" class="main-font" font-size="13" font-weight="700" letter-spacing="1">
+      ✦ ECOSSISTEMA &amp; STACK TECNOLÓGICA
+    </text>
+  </g>
+
+  <!-- Top Right Status Badge -->
+  <g transform="translate(648, 14)">
+    <rect x="0" y="0" width="164" height="26" rx="13" fill="#0D1527" stroke="#1E293B" stroke-width="1" />
+    <circle cx="15" cy="13" r="4.5" fill="#00D9FF" class="pulse-tech" />
+    <text x="28" y="17" fill="#E2E8F0" class="code-font" font-size="10" font-weight="600" letter-spacing="0.5">CORE ARCHITECTURE</text>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="28" y1="52" x2="812" y2="52" stroke="#1E293B" stroke-width="1" />
+
+  <!-- 3 BENTO COLUMNS -->
+  <g transform="translate(28, 66)">
+
+    <!-- ================= COLUMN 1: FRONTEND ================= -->
+    <g transform="translate(0, 0)">
+      <!-- Container Box -->
+      <rect x="0" y="0" width="250" height="212" rx="10" fill="#0B1120" stroke="url(#colBorderCyan)" stroke-width="1" />
+      
+      <!-- Category Header -->
+      <text x="14" y="24" fill="#00D9FF" class="code-font" font-size="11.5" font-weight="700" letter-spacing="0.5">01 // FRONTEND &amp; UX</text>
+      <line x1="14" y1="36" x2="236" y2="36" stroke="#1E293B" stroke-width="0.8" />
+
+      <!-- Tech Pills -->
+      <!-- Item 1 -->
+      <g transform="translate(14, 46)">
+        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3.5" fill="#00D9FF" />
+        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Next.js 15 (App Router)</text>
+      </g>
+
+      <!-- Item 2 -->
+      <g transform="translate(14, 78)">
+        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3.5" fill="#38BDF8" />
+        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">React 18 &amp; 19 Ecosystem</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(14, 110)">
+        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3.5" fill="#3B82F6" />
+        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">TypeScript / ESNext</text>
+      </g>
+
+      <!-- Item 4 -->
+      <g transform="translate(14, 142)">
+        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3.5" fill="#06B6D4" />
+        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Tailwind CSS &amp; Shadcn/ui</text>
+      </g>
+
+      <!-- Item 5 -->
+      <g transform="translate(14, 174)">
+        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3.5" fill="#F59E0B" />
+        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">MUI &amp; Design Systems</text>
+      </g>
+    </g>
+
+    <!-- ================= COLUMN 2: BACKEND ================= -->
+    <g transform="translate(267, 0)">
+      <!-- Container Box -->
+      <rect x="0" y="0" width="250" height="212" rx="10" fill="#0B1120" stroke="url(#colBorderPurple)" stroke-width="1" />
+      
+      <!-- Category Header -->
+      <text x="14" y="24" fill="#A78BFA" class="code-font" font-size="11.5" font-weight="700" letter-spacing="0.5">02 // BACKEND &amp; DADOS</text>
+      <line x1="14" y1="36" x2="236" y2="36" stroke="#1E293B" stroke-width="0.8" />
+
+      <!-- Tech Pills -->
+      <!-- Item 1 -->
+      <g transform="translate(14, 46)">
+        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3.5" fill="#22C55E" />
+        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Node.js &amp; Express APIs</text>
+      </g>
+
+      <!-- Item 2 -->
+      <g transform="translate(14, 78)">
+        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3.5" fill="#3ECF8E" />
+        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Supabase &amp; PostgreSQL</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(14, 110)">
+        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3.5" fill="#FBBF24" />
+        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Firebase &amp; Cloud Stores</text>
+      </g>
+
+      <!-- Item 4 -->
+      <g transform="translate(14, 142)">
+        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3.5" fill="#47A248" />
+        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">MongoDB / NoSQL Engines</text>
+      </g>
+
+      <!-- Item 5 -->
+      <g transform="translate(14, 174)">
+        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3.5" fill="#60A5FA" />
+        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Python Scripting &amp; Data</text>
+      </g>
+    </g>
+
+    <!-- ================= COLUMN 3: AI & DEVOPS ================= -->
+    <g transform="translate(534, 0)">
+      <!-- Container Box -->
+      <rect x="0" y="0" width="250" height="212" rx="10" fill="#0B1120" stroke="url(#colBorderGreen)" stroke-width="1" />
+      
+      <!-- Category Header -->
+      <text x="14" y="24" fill="#34D399" class="code-font" font-size="11.5" font-weight="700" letter-spacing="0.5">03 // IA, AGENTES &amp; DEVOPS</text>
+      <line x1="14" y1="36" x2="236" y2="36" stroke="#1E293B" stroke-width="0.8" />
+
+      <!-- Tech Pills -->
+      <!-- Item 1 -->
+      <g transform="translate(14, 46)">
+        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3.5" fill="#A855F7" />
+        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">OpenAI &amp; Claude APIs</text>
+      </g>
+
+      <!-- Item 2 -->
+      <g transform="translate(14, 78)">
+        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3.5" fill="#EA4B71" />
+        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">n8n Multi-Channel Flows</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(14, 110)">
+        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3.5" fill="#008CDD" />
+        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Stripe Billing &amp; Webhooks</text>
+      </g>
+
+      <!-- Item 4 -->
+      <g transform="translate(14, 142)">
+        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3.5" fill="#2496ED" />
+        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Docker Containers &amp; Edge</text>
+      </g>
+
+      <!-- Item 5 -->
+      <g transform="translate(14, 174)">
+        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
+        <circle cx="12" cy="13" r="3.5" fill="#F05032" />
+        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Git &amp; GitHub Actions CI</text>
+      </g>
+    </g>
+
+  </g>
+</svg>
