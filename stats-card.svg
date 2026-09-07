@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="statsBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080D1A" />
+      <stop offset="100%" stop-color="#040711" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D9FF" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+
+    <pattern id="cardGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1E293B" stroke-width="0.6" stroke-opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseLive {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.85); }
+    }
+    .live-dot {
+      transform-origin: 792px 28px;
+      animation: pulseLive 2s ease-in-out infinite;
+    }
+    .code-text {
+      font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+    }
+    .main-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="2" y="2" width="836" height="176" rx="14" fill="url(#statsBg)" stroke="#1E293B" stroke-width="1.5" />
+  <rect x="2" y="2" width="836" height="176" rx="14" fill="url(#cardGrid)" />
+
+  <!-- Top Title Bar -->
+  <g transform="translate(28, 28)">
+    <text x="0" y="0" fill="#00D9FF" class="main-text" font-size="13" font-weight="700" letter-spacing="1">✦ GITHUB ANALYTICS &amp; MÉTRICAS DE PRODUÇÃO</text>
+  </g>
+
+  <!-- Top Right Status Badge -->
+  <g transform="translate(680, 14)">
+    <rect x="0" y="0" width="132" height="26" rx="13" fill="#0D1527" stroke="#1E293B" stroke-width="1" />
+    <circle cx="15" cy="13" r="4.5" fill="#10B981" class="live-dot" />
+    <text x="28" y="17" fill="#E2E8F0" class="code-text" font-size="10.5" font-weight="600">100% UPTIME</text>
+  </g>
+
+  <!-- Horizontal Divider -->
+  <line x1="28" y1="52" x2="812" y2="52" stroke="#1E293B" stroke-width="1" />
+
+  <!-- Metrics Grid (4 Columns) -->
+  <g transform="translate(0, 68)">
+    <!-- Column 1: Total Contributions -->
+    <g transform="translate(40, 0)">
+      <text x="0" y="32" fill="#00D9FF" class="code-text" font-size="30" font-weight="800">2,504+</text>
+      <text x="0" y="58" fill="#F8FAFC" class="main-text" font-size="12" font-weight="600">Total de Contribuições</text>
+      <text x="0" y="78" fill="#64748B" class="code-text" font-size="10.5">Commits &amp; Entregas</text>
+    </g>
+
+    <!-- Divider 1 -->
+    <line x1="230" y1="10" x2="230" y2="86" stroke="#1E293B" stroke-width="1" stroke-dasharray="3 3" />
+
+    <!-- Column 2: Streak -->
+    <g transform="translate(260, 0)">
+      <text x="0" y="32" fill="#38BDF8" class="code-text" font-size="30" font-weight="800">331 Dias</text>
+      <text x="0" y="58" fill="#F8FAFC" class="main-text" font-size="12" font-weight="600">Sequência Consecutiva</text>
+      <text x="0" y="78" fill="#64748B" class="code-text" font-size="10.5">🔥 Consistência Ativa</text>
+    </g>
+
+    <!-- Divider 2 -->
+    <line x1="435" y1="10" x2="435" y2="86" stroke="#1E293B" stroke-width="1" stroke-dasharray="3 3" />
+
+    <!-- Column 3: Shipped Projects -->
+    <g transform="translate(465, 0)">
+      <text x="0" y="32" fill="#C084FC" class="code-text" font-size="30" font-weight="800">50+</text>
+      <text x="0" y="58" fill="#F8FAFC" class="main-text" font-size="12" font-weight="600">Projetos &amp; Repositórios</text>
+      <text x="0" y="78" fill="#64748B" class="code-text" font-size="10.5">SaaS &amp; Agentes IA</text>
+    </g>
+
+    <!-- Divider 3 -->
+    <line x1="640" y1="10" x2="640" y2="86" stroke="#1E293B" stroke-width="1" stroke-dasharray="3 3" />
+
+    <!-- Column 4: Reliability / Performance -->
+    <g transform="translate(670, 0)">
+      <text x="0" y="32" fill="#10B981" class="code-text" font-size="30" font-weight="800">99.8%</text>
+      <text x="0" y="58" fill="#F8FAFC" class="main-text" font-size="12" font-weight="600">Taxa de Confiabilidade</text>
+      <text x="0" y="78" fill="#64748B" class="code-text" font-size="10.5">Lighthouse 95+ Score</text>
+    </g>
+  </g>
+</svg>
