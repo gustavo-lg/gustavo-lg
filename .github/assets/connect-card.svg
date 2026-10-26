@@ -1,106 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 230" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 250" width="100%" height="100%" role="img" aria-labelledby="cta-title">
+  <title id="cta-title">Vamos construir algo extraordinário? gustavogoncalves.dev.br, gustavolgoncalves05@gmail.com, linkedin.com/in/gustavo-lg</title>
   <defs>
-    <linearGradient id="ctaBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#080D1A" />
-      <stop offset="50%" stop-color="#070C18" />
-      <stop offset="100%" stop-color="#040711" />
+    <clipPath id="card"><rect x="1" y="1" width="838" height="248" rx="20" /></clipPath>
+    <clipPath id="btn1"><rect x="0" y="0" width="236" height="44" rx="14" /></clipPath>
+
+    <linearGradient id="gFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.11" />
+      <stop offset="1" stop-color="#fff" stop-opacity="0.03" />
     </linearGradient>
-
-    <linearGradient id="neonCtaBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00D9FF" />
-      <stop offset="50%" stop-color="#8B5CF6" />
-      <stop offset="100%" stop-color="#00D9FF" />
+    <linearGradient id="gStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.36" />
+      <stop offset="0.45" stop-color="#fff" stop-opacity="0.06" />
+      <stop offset="1" stop-color="#fff" stop-opacity="0.16" />
     </linearGradient>
-
-    <radialGradient id="ctaCenterGlow" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#00D9FF" stop-opacity="0.14" />
-      <stop offset="60%" stop-color="#7C3AED" stop-opacity="0.06" />
-      <stop offset="100%" stop-color="#080D1A" stop-opacity="0" />
-    </radialGradient>
-
-    <pattern id="ctaGrid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1E293B" stroke-width="0.6" stroke-opacity="0.35" />
-    </pattern>
+    <linearGradient id="gGlint" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.55" />
+      <stop offset="1" stop-color="#fff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="gPrimary" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#64D2FF" stop-opacity="0.34" />
+      <stop offset="1" stop-color="#0A84FF" stop-opacity="0.20" />
+    </linearGradient>
+    <linearGradient id="gPrimaryStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#64D2FF" stop-opacity="0.85" />
+      <stop offset="1" stop-color="#0A84FF" stop-opacity="0.35" />
+    </linearGradient>
+    <linearGradient id="gSweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#64D2FF" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#64D2FF" stop-opacity="1" />
+      <stop offset="1" stop-color="#64D2FF" stop-opacity="0" />
+    </linearGradient>
+    <radialGradient id="orbBlue"><stop offset="0" stop-color="#0A84FF" stop-opacity="0.46" /><stop offset="1" stop-color="#0A84FF" stop-opacity="0" /></radialGradient>
+    <radialGradient id="orbIndigo"><stop offset="0" stop-color="#5E5CE6" stop-opacity="0.42" /><stop offset="1" stop-color="#5E5CE6" stop-opacity="0" /></radialGradient>
+    <radialGradient id="orbCyan"><stop offset="0" stop-color="#64D2FF" stop-opacity="0.28" /><stop offset="1" stop-color="#64D2FF" stop-opacity="0" /></radialGradient>
   </defs>
 
   <style>
-    @keyframes pulseLiveCta {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.35; transform: scale(0.85); }
-    }
-    @keyframes borderGlowLoop {
-      0% { stroke-dashoffset: 0; }
-      100% { stroke-dashoffset: 2100; }
-    }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI Variable Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, "SF Mono", "JetBrains Mono", Consolas, Menlo, monospace; }
 
-    .pulse-cta {
-      transform-origin: 307px 28px;
-      animation: pulseLiveCta 2s ease-in-out infinite;
-    }
+    @keyframes drift1 { from { transform: translate(0, 0); } to { transform: translate(120px, -20px); } }
+    @keyframes drift2 { from { transform: translate(0, 0); } to { transform: translate(-120px, 20px); } }
+    @keyframes drift3 { from { transform: translate(0, 0); } to { transform: translate(-50px, -30px); } }
+    .o1 { animation: drift1 16s ease-in-out infinite alternate; }
+    .o2 { animation: drift2 20s ease-in-out infinite alternate; }
+    .o3 { animation: drift3 12s ease-in-out infinite alternate; }
 
-    .border-anim {
-      stroke: url(#neonCtaBorder);
-      stroke-width: 1.5;
-      stroke-dasharray: 100 400;
-      animation: borderGlowLoop 14s linear infinite;
-    }
+    @keyframes glare { 0%, 55% { transform: translateX(0); } 100% { transform: translateX(1200px); } }
+    .glare { animation: glare 11s ease-in-out infinite 1s; }
 
-    .code-font {
-      font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
-    }
-    .main-font {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    @keyframes sweep { from { transform: translateX(-260px); } to { transform: translateX(840px); } }
+    .sweep { animation: sweep 7s ease-in-out infinite; }
+
+    @keyframes ring { 0% { opacity: 0.6; transform: scale(1); } 100% { opacity: 0; transform: scale(2.8); } }
+    .ring { transform-box: fill-box; transform-origin: center; animation: ring 2.4s ease-out infinite; }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .rise { animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+    .d1 { animation-delay: 0.1s; } .d2 { animation-delay: 0.25s; } .d3 { animation-delay: 0.4s; }
+    .d4 { animation-delay: 0.55s; } .d5 { animation-delay: 0.7s; } .d6 { animation-delay: 0.85s; }
+
+    /* Brilho passa pelo botão principal */
+    @keyframes shine { 0%, 60% { transform: translateX(-80px); } 100% { transform: translateX(320px); } }
+    .shine { animation: shine 5s ease-in-out infinite 1.5s; }
+
+    @keyframes breathe { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+    .breathe { animation: breathe 4s ease-in-out infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .o1, .o2, .o3, .glare, .sweep, .ring, .rise, .shine, .breathe { animation: none !important; }
+      .ring, .sweep, .glare, .shine { opacity: 0; }
     }
   </style>
 
-  <!-- Card Background -->
-  <rect x="2" y="2" width="836" height="226" rx="16" fill="url(#ctaBg)" stroke="#1E293B" stroke-width="1.5" />
-  <rect x="2" y="2" width="836" height="226" rx="16" fill="url(#ctaGrid)" />
-  <rect x="2" y="2" width="836" height="226" rx="16" fill="url(#ctaCenterGlow)" />
+  <rect x="1" y="1" width="838" height="248" rx="20" fill="#06080F" />
+  <g clip-path="url(#card)">
+    <circle class="o1" cx="150" cy="40" r="270" fill="url(#orbIndigo)" />
+    <circle class="o2" cx="700" cy="250" r="280" fill="url(#orbBlue)" />
+    <circle class="o3" cx="420" cy="120" r="170" fill="url(#orbCyan)" />
+    <g transform="skewX(-20)"><rect class="glare" x="-300" y="-20" width="160" height="290" fill="url(#gGlint)" opacity="0.10" /></g>
+    <rect class="sweep" x="0" y="1" width="260" height="1.5" fill="url(#gSweep)" />
+  </g>
+  <rect x="1" y="1" width="838" height="248" rx="20" fill="none" stroke="url(#gStroke)" stroke-width="1" />
 
-  <!-- Animated Border Glow -->
-  <rect x="2" y="2" width="836" height="226" rx="16" fill="none" class="border-anim" />
-
-  <!-- Top Status Badge (Centered) -->
-  <g transform="translate(280, 16)">
-    <rect x="0" y="0" width="280" height="26" rx="13" fill="#091814" stroke="#10B981" stroke-width="0.8" />
-    <circle cx="16" cy="13" r="4.5" fill="#10B981" class="pulse-cta" />
-    <text x="30" y="17" fill="#E2E8F0" class="code-font" font-size="10.5" font-weight="600" letter-spacing="0.5">DISPONÍVEL PARA PROJETOS &amp; SAAS</text>
+  <!-- Status -->
+  <g class="rise d1">
+    <rect x="296" y="26" width="248" height="28" rx="14" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
+    <circle class="ring" cx="314" cy="40" r="3.5" fill="#30D158" />
+    <circle cx="314" cy="40" r="3.5" fill="#30D158" />
+    <text class="sans" x="328" y="45" fill="#E5E7EB" font-size="12.5" font-weight="600">Disponível para projetos &amp; SaaS</text>
   </g>
 
-  <!-- Main Headline -->
-  <text x="420" y="80" fill="#FFFFFF" class="main-font" font-size="25" font-weight="800" text-anchor="middle" letter-spacing="-0.5">
-    Vamos Construir Algo Extraordinário?
-  </text>
+  <!-- Título -->
+  <text class="sans rise d2" x="420" y="100" fill="#F5F5F7" font-size="30" font-weight="700" text-anchor="middle" letter-spacing="-0.8">Vamos construir algo extraordinário?</text>
+  <text class="sans rise d3" x="420" y="130" fill="#A1A8B8" font-size="15" text-anchor="middle">Plataformas SaaS escaláveis, agentes de IA e consultoria de alto impacto.</text>
 
-  <!-- Subtitle -->
-  <text x="420" y="108" fill="#94A3B8" class="main-font" font-size="13" font-weight="400" text-anchor="middle">
-    Aberto para criação de plataformas SaaS escaláveis, agentes de IA e consultoria de alto impacto.
-  </text>
-
-  <!-- 3 Interactive Contact Capsules (Centered) -->
-  <g transform="translate(56, 140)">
-    <!-- Capsule 1: Portfolio -->
-    <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="232" height="38" rx="10" fill="#0B132B" stroke="#00D9FF" stroke-width="1" stroke-opacity="0.6" />
-      <text x="24" y="23" fill="#00D9FF" class="code-font" font-size="12" font-weight="700">🌐 gustavogoncalves.dev.br</text>
+  <!-- Botões em vidro -->
+  <g transform="translate(62, 160)">
+    <!-- Principal: portfólio -->
+    <g class="rise d4">
+      <rect width="236" height="44" rx="14" fill="url(#gPrimary)" stroke="url(#gPrimaryStroke)" stroke-width="1" />
+      <g clip-path="url(#btn1)"><g transform="skewX(-20)"><rect class="shine" x="-40" y="-4" width="40" height="52" fill="url(#gGlint)" opacity="0.5" /></g></g>
+      <g transform="translate(16, 11)" fill="none" stroke="#F5F5F7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="9" /><path d="M2 11h18" /><path d="M11 2c3 3 4.5 6 4.5 9s-1.5 6-4.5 9c-3-3-4.5-6-4.5-9s1.5-6 4.5-9z" />
+      </g>
+      <text class="mono" x="46" y="27" fill="#F5F5F7" font-size="13" font-weight="700">gustavogoncalves.dev.br</text>
     </g>
 
-    <!-- Capsule 2: Email -->
-    <g transform="translate(248, 0)">
-      <rect x="0" y="0" width="254" height="38" rx="10" fill="#0B132B" stroke="#8B5CF6" stroke-width="1" stroke-opacity="0.6" />
-      <text x="18" y="23" fill="#C084FC" class="code-font" font-size="11.5" font-weight="700">📧 gustavolgoncalves05@gmail</text>
+    <!-- E-mail -->
+    <g class="rise d5" transform="translate(250, 0)">
+      <rect width="296" height="44" rx="14" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
+      <g transform="translate(16, 11)" fill="none" stroke="#E5E7EB" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="1.5" y="4.5" width="19" height="14" rx="3" /><path d="M2.5 6.5l8.5 6 8.5-6" />
+      </g>
+      <text class="mono" x="46" y="27" fill="#E5E7EB" font-size="13" font-weight="600">gustavolgoncalves05@gmail.com</text>
     </g>
 
-    <!-- Capsule 3: LinkedIn -->
-    <g transform="translate(518, 0)">
-      <rect x="0" y="0" width="210" height="38" rx="10" fill="#0B132B" stroke="#0A66C2" stroke-width="1" stroke-opacity="0.6" />
-      <text x="24" y="23" fill="#38BDF8" class="code-font" font-size="12" font-weight="700">💼 /in/gustavo-lg</text>
+    <!-- LinkedIn -->
+    <g class="rise d6" transform="translate(560, 0)">
+      <rect width="156" height="44" rx="14" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
+      <g transform="translate(16, 11)">
+        <rect width="22" height="22" rx="5" fill="none" stroke="#E5E7EB" stroke-width="1.6" />
+        <text class="sans" x="11" y="16.5" fill="#E5E7EB" font-size="12" font-weight="700" text-anchor="middle">in</text>
+      </g>
+      <text class="mono" x="46" y="27" fill="#E5E7EB" font-size="13" font-weight="600">/gustavo-lg</text>
     </g>
   </g>
 
-  <!-- Bottom Subtext / Brand Signoff -->
-  <text x="420" y="206" fill="#64748B" class="main-font" font-size="11" font-style="italic" text-anchor="middle">
-    ✦ Construindo o futuro com código limpo, arquiteturas escaláveis e inteligência artificial.
-  </text>
+  <text class="sans rise d6" x="420" y="234" fill="#8B93A7" font-size="12.5" text-anchor="middle">Código limpo, arquiteturas escaláveis e inteligência artificial.</text>
 </svg>

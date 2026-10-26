@@ -1,211 +1,144 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 296" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 336" width="100%" height="100%" role="img" aria-labelledby="stack-title stack-desc">
+  <title id="stack-title">Ecossistema e stack tecnológica</title>
+  <desc id="stack-desc">Frontend: Next.js 15, React 18 e 19, TypeScript, Tailwind CSS e Shadcn/ui, MUI. Backend e dados: Node.js e Express, Supabase e PostgreSQL, Firebase, MongoDB, Python. IA, agentes e DevOps: OpenAI e Claude APIs, n8n, Stripe, Docker, Git e GitHub Actions.</desc>
   <defs>
-    <linearGradient id="techCardBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#080D1A" />
-      <stop offset="50%" stop-color="#050914" />
-      <stop offset="100%" stop-color="#070B14" />
-    </linearGradient>
+    <clipPath id="card"><rect x="1" y="1" width="838" height="334" rx="20" /></clipPath>
 
-    <linearGradient id="colBorderCyan" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00D9FF" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#00D9FF" stop-opacity="0.05" />
+    <linearGradient id="gFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.11" />
+      <stop offset="1" stop-color="#fff" stop-opacity="0.03" />
     </linearGradient>
-
-    <linearGradient id="colBorderPurple" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.05" />
+    <linearGradient id="gStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.36" />
+      <stop offset="0.45" stop-color="#fff" stop-opacity="0.06" />
+      <stop offset="1" stop-color="#fff" stop-opacity="0.16" />
     </linearGradient>
-
-    <linearGradient id="colBorderGreen" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#10B981" stop-opacity="0.05" />
+    <linearGradient id="gGlint" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.55" />
+      <stop offset="1" stop-color="#fff" stop-opacity="0" />
     </linearGradient>
-
-    <pattern id="techGridPattern" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1E293B" stroke-width="0.6" stroke-opacity="0.3" />
-    </pattern>
+    <linearGradient id="gSweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#64D2FF" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#64D2FF" stop-opacity="1" />
+      <stop offset="1" stop-color="#64D2FF" stop-opacity="0" />
+    </linearGradient>
+    <radialGradient id="orbBlue"><stop offset="0" stop-color="#0A84FF" stop-opacity="0.38" /><stop offset="1" stop-color="#0A84FF" stop-opacity="0" /></radialGradient>
+    <radialGradient id="orbIndigo"><stop offset="0" stop-color="#5E5CE6" stop-opacity="0.36" /><stop offset="1" stop-color="#5E5CE6" stop-opacity="0" /></radialGradient>
   </defs>
 
   <style>
-    @keyframes pulseDotTech {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.35; transform: scale(0.85); }
-    }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI Variable Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, "SF Mono", "JetBrains Mono", Consolas, Menlo, monospace; }
 
-    .pulse-tech {
-      transform-origin: 792px 28px;
-      animation: pulseDotTech 2s ease-in-out infinite;
-    }
+    @keyframes drift1 { from { transform: translate(0, 0); } to { transform: translate(100px, -30px); } }
+    @keyframes drift2 { from { transform: translate(0, 0); } to { transform: translate(-100px, 30px); } }
+    .o1 { animation: drift1 18s ease-in-out infinite alternate; }
+    .o2 { animation: drift2 22s ease-in-out infinite alternate; }
 
-    .code-font {
-      font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
-    }
-    .main-font {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    @keyframes glare { 0%, 55% { transform: translateX(0); } 100% { transform: translateX(1200px); } }
+    .glare { animation: glare 12s ease-in-out infinite 6s; }
+
+    @keyframes sweep { from { transform: translateX(-260px); } to { transform: translateX(840px); } }
+    .sweep { animation: sweep 8s ease-in-out infinite 4s; }
+
+    @keyframes ring { 0% { opacity: 0.6; transform: scale(1); } 100% { opacity: 0; transform: scale(2.8); } }
+    .ring { transform-box: fill-box; transform-origin: center; animation: ring 2.4s ease-out infinite; }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .rise { animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+
+    /* Pulso de luz desce pela lista de cada coluna */
+    @keyframes scan { 0%, 100% { opacity: 0; } 8%, 18% { opacity: 1; } 30% { opacity: 0; } }
+    .scan { animation: scan 6s ease-in-out infinite; }
+
+    @keyframes breathe { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+    .breathe { animation: breathe 4s ease-in-out infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .o1, .o2, .glare, .sweep, .ring, .rise, .scan, .breathe { animation: none !important; }
+      .ring, .sweep, .glare, .scan { opacity: 0; }
     }
   </style>
 
-  <!-- Card Background -->
-  <rect x="2" y="2" width="836" height="292" rx="14" fill="url(#techCardBg)" stroke="#1E293B" stroke-width="1.5" />
-  <rect x="2" y="2" width="836" height="292" rx="14" fill="url(#techGridPattern)" />
+  <rect x="1" y="1" width="838" height="334" rx="20" fill="#06080F" />
+  <g clip-path="url(#card)">
+    <circle class="o1" cx="130" cy="0" r="260" fill="url(#orbIndigo)" />
+    <circle class="o2" cx="720" cy="340" r="270" fill="url(#orbBlue)" />
+    <g transform="skewX(-20)"><rect class="glare" x="-300" y="-20" width="140" height="380" fill="url(#gGlint)" opacity="0.09" /></g>
+    <rect class="sweep" x="0" y="1" width="260" height="1.5" fill="url(#gSweep)" />
+  </g>
+  <rect x="1" y="1" width="838" height="334" rx="20" fill="none" stroke="url(#gStroke)" stroke-width="1" />
 
-  <!-- Top Title Header -->
-  <g transform="translate(28, 28)">
-    <text x="0" y="0" fill="#00D9FF" class="main-font" font-size="13" font-weight="700" letter-spacing="1">
-      ✦ ECOSSISTEMA &amp; STACK TECNOLÓGICA
-    </text>
+  <!-- Cabeçalho -->
+  <text class="sans rise" x="40" y="42" fill="#F5F5F7" font-size="16" font-weight="600" style="animation-delay:0.1s">Ecossistema &amp; stack</text>
+  <g class="rise" style="animation-delay:0.1s">
+    <rect x="612" y="24" width="188" height="28" rx="14" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
+    <circle class="ring" cx="630" cy="38" r="3.5" fill="#64D2FF" />
+    <circle cx="630" cy="38" r="3.5" fill="#64D2FF" />
+    <text class="sans" x="644" y="43" fill="#E5E7EB" font-size="12.5" font-weight="600">Arquitetura de produto</text>
   </g>
 
-  <!-- Top Right Status Badge -->
-  <g transform="translate(648, 14)">
-    <rect x="0" y="0" width="164" height="26" rx="13" fill="#0D1527" stroke="#1E293B" stroke-width="1" />
-    <circle cx="15" cy="13" r="4.5" fill="#00D9FF" class="pulse-tech" />
-    <text x="28" y="17" fill="#E2E8F0" class="code-font" font-size="10" font-weight="600" letter-spacing="0.5">CORE ARCHITECTURE</text>
+  <!-- ===== Coluna 1 ===== -->
+  <g class="rise" style="animation-delay:0.25s" transform="translate(40, 72)">
+    <rect width="244" height="244" rx="18" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
+    <rect class="breathe" x="20" y="0.75" width="204" height="1" fill="url(#gGlint)" />
+    <text class="mono" x="18" y="32" fill="#64D2FF" font-size="12" font-weight="700" letter-spacing="0.6">01 · FRONTEND &amp; UX</text>
+
+    <g class="sans" font-size="14" fill="#F5F5F7">
+      <rect class="scan" style="animation-delay:0s"   x="12" y="48"  width="220" height="32" rx="10" fill="#64D2FF" fill-opacity="0.14" />
+      <rect class="scan" style="animation-delay:0.4s" x="12" y="84"  width="220" height="32" rx="10" fill="#64D2FF" fill-opacity="0.14" />
+      <rect class="scan" style="animation-delay:0.8s" x="12" y="120" width="220" height="32" rx="10" fill="#64D2FF" fill-opacity="0.14" />
+      <rect class="scan" style="animation-delay:1.2s" x="12" y="156" width="220" height="32" rx="10" fill="#64D2FF" fill-opacity="0.14" />
+      <rect class="scan" style="animation-delay:1.6s" x="12" y="192" width="220" height="32" rx="10" fill="#64D2FF" fill-opacity="0.14" />
+
+      <circle cx="26" cy="64"  r="3" fill="#64D2FF" /><text x="40" y="69">Next.js 15 (App Router)</text>
+      <circle cx="26" cy="100" r="3" fill="#64D2FF" /><text x="40" y="105">React 18 &amp; 19</text>
+      <circle cx="26" cy="136" r="3" fill="#64D2FF" /><text x="40" y="141">TypeScript / ESNext</text>
+      <circle cx="26" cy="172" r="3" fill="#64D2FF" /><text x="40" y="177">Tailwind CSS &amp; Shadcn/ui</text>
+      <circle cx="26" cy="208" r="3" fill="#64D2FF" /><text x="40" y="213">MUI &amp; Design Systems</text>
+    </g>
   </g>
 
-  <!-- Divider Line -->
-  <line x1="28" y1="52" x2="812" y2="52" stroke="#1E293B" stroke-width="1" />
+  <!-- ===== Coluna 2 ===== -->
+  <g class="rise" style="animation-delay:0.4s" transform="translate(298, 72)">
+    <rect width="244" height="244" rx="18" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
+    <rect class="breathe" style="animation-delay:1s" x="20" y="0.75" width="204" height="1" fill="url(#gGlint)" />
+    <text class="mono" x="18" y="32" fill="#64D2FF" font-size="12" font-weight="700" letter-spacing="0.6">02 · BACKEND &amp; DADOS</text>
 
-  <!-- 3 BENTO COLUMNS -->
-  <g transform="translate(28, 66)">
+    <g class="sans" font-size="14" fill="#F5F5F7">
+      <rect class="scan" style="animation-delay:0.2s" x="12" y="48"  width="220" height="32" rx="10" fill="#64D2FF" fill-opacity="0.14" />
+      <rect class="scan" style="animation-delay:0.6s" x="12" y="84"  width="220" height="32" rx="10" fill="#64D2FF" fill-opacity="0.14" />
+      <rect class="scan" style="animation-delay:1s"   x="12" y="120" width="220" height="32" rx="10" fill="#64D2FF" fill-opacity="0.14" />
+      <rect class="scan" style="animation-delay:1.4s" x="12" y="156" width="220" height="32" rx="10" fill="#64D2FF" fill-opacity="0.14" />
+      <rect class="scan" style="animation-delay:1.8s" x="12" y="192" width="220" height="32" rx="10" fill="#64D2FF" fill-opacity="0.14" />
 
-    <!-- ================= COLUMN 1: FRONTEND ================= -->
-    <g transform="translate(0, 0)">
-      <!-- Container Box -->
-      <rect x="0" y="0" width="250" height="212" rx="10" fill="#0B1120" stroke="url(#colBorderCyan)" stroke-width="1" />
-      
-      <!-- Category Header -->
-      <text x="14" y="24" fill="#00D9FF" class="code-font" font-size="11.5" font-weight="700" letter-spacing="0.5">01 // FRONTEND &amp; UX</text>
-      <line x1="14" y1="36" x2="236" y2="36" stroke="#1E293B" stroke-width="0.8" />
-
-      <!-- Tech Pills -->
-      <!-- Item 1 -->
-      <g transform="translate(14, 46)">
-        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
-        <circle cx="12" cy="13" r="3.5" fill="#00D9FF" />
-        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Next.js 15 (App Router)</text>
-      </g>
-
-      <!-- Item 2 -->
-      <g transform="translate(14, 78)">
-        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
-        <circle cx="12" cy="13" r="3.5" fill="#38BDF8" />
-        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">React 18 &amp; 19 Ecosystem</text>
-      </g>
-
-      <!-- Item 3 -->
-      <g transform="translate(14, 110)">
-        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
-        <circle cx="12" cy="13" r="3.5" fill="#3B82F6" />
-        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">TypeScript / ESNext</text>
-      </g>
-
-      <!-- Item 4 -->
-      <g transform="translate(14, 142)">
-        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
-        <circle cx="12" cy="13" r="3.5" fill="#06B6D4" />
-        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Tailwind CSS &amp; Shadcn/ui</text>
-      </g>
-
-      <!-- Item 5 -->
-      <g transform="translate(14, 174)">
-        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
-        <circle cx="12" cy="13" r="3.5" fill="#F59E0B" />
-        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">MUI &amp; Design Systems</text>
-      </g>
+      <circle cx="26" cy="64"  r="3" fill="#64D2FF" /><text x="40" y="69">Node.js &amp; Express APIs</text>
+      <circle cx="26" cy="100" r="3" fill="#64D2FF" /><text x="40" y="105">Supabase &amp; PostgreSQL</text>
+      <circle cx="26" cy="136" r="3" fill="#64D2FF" /><text x="40" y="141">Firebase &amp; Cloud Stores</text>
+      <circle cx="26" cy="172" r="3" fill="#64D2FF" /><text x="40" y="177">MongoDB / NoSQL</text>
+      <circle cx="26" cy="208" r="3" fill="#64D2FF" /><text x="40" y="213">Python Scripting &amp; Data</text>
     </g>
+  </g>
 
-    <!-- ================= COLUMN 2: BACKEND ================= -->
-    <g transform="translate(267, 0)">
-      <!-- Container Box -->
-      <rect x="0" y="0" width="250" height="212" rx="10" fill="#0B1120" stroke="url(#colBorderPurple)" stroke-width="1" />
-      
-      <!-- Category Header -->
-      <text x="14" y="24" fill="#A78BFA" class="code-font" font-size="11.5" font-weight="700" letter-spacing="0.5">02 // BACKEND &amp; DADOS</text>
-      <line x1="14" y1="36" x2="236" y2="36" stroke="#1E293B" stroke-width="0.8" />
+  <!-- ===== Coluna 3 ===== -->
+  <g class="rise" style="animation-delay:0.55s" transform="translate(556, 72)">
+    <rect width="244" height="244" rx="18" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
+    <rect class="breathe" style="animation-delay:2s" x="20" y="0.75" width="204" height="1" fill="url(#gGlint)" />
+    <text class="mono" x="18" y="32" fill="#64D2FF" font-size="12" font-weight="700" letter-spacing="0.6">03 · IA &amp; DEVOPS</text>
 
-      <!-- Tech Pills -->
-      <!-- Item 1 -->
-      <g transform="translate(14, 46)">
-        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
-        <circle cx="12" cy="13" r="3.5" fill="#22C55E" />
-        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Node.js &amp; Express APIs</text>
-      </g>
+    <g class="sans" font-size="14" fill="#F5F5F7">
+      <rect class="scan" style="animation-delay:0.4s" x="12" y="48"  width="220" height="32" rx="10" fill="#64D2FF" fill-opacity="0.14" />
+      <rect class="scan" style="animation-delay:0.8s" x="12" y="84"  width="220" height="32" rx="10" fill="#64D2FF" fill-opacity="0.14" />
+      <rect class="scan" style="animation-delay:1.2s" x="12" y="120" width="220" height="32" rx="10" fill="#64D2FF" fill-opacity="0.14" />
+      <rect class="scan" style="animation-delay:1.6s" x="12" y="156" width="220" height="32" rx="10" fill="#64D2FF" fill-opacity="0.14" />
+      <rect class="scan" style="animation-delay:2s"   x="12" y="192" width="220" height="32" rx="10" fill="#64D2FF" fill-opacity="0.14" />
 
-      <!-- Item 2 -->
-      <g transform="translate(14, 78)">
-        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
-        <circle cx="12" cy="13" r="3.5" fill="#3ECF8E" />
-        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Supabase &amp; PostgreSQL</text>
-      </g>
-
-      <!-- Item 3 -->
-      <g transform="translate(14, 110)">
-        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
-        <circle cx="12" cy="13" r="3.5" fill="#FBBF24" />
-        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Firebase &amp; Cloud Stores</text>
-      </g>
-
-      <!-- Item 4 -->
-      <g transform="translate(14, 142)">
-        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
-        <circle cx="12" cy="13" r="3.5" fill="#47A248" />
-        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">MongoDB / NoSQL Engines</text>
-      </g>
-
-      <!-- Item 5 -->
-      <g transform="translate(14, 174)">
-        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
-        <circle cx="12" cy="13" r="3.5" fill="#60A5FA" />
-        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Python Scripting &amp; Data</text>
-      </g>
+      <circle cx="26" cy="64"  r="3" fill="#64D2FF" /><text x="40" y="69">OpenAI &amp; Claude APIs</text>
+      <circle cx="26" cy="100" r="3" fill="#64D2FF" /><text x="40" y="105">n8n Multi-Channel Flows</text>
+      <circle cx="26" cy="136" r="3" fill="#64D2FF" /><text x="40" y="141">Stripe Billing &amp; Webhooks</text>
+      <circle cx="26" cy="172" r="3" fill="#64D2FF" /><text x="40" y="177">Docker &amp; Edge</text>
+      <circle cx="26" cy="208" r="3" fill="#64D2FF" /><text x="40" y="213">Git &amp; GitHub Actions CI</text>
     </g>
-
-    <!-- ================= COLUMN 3: AI & DEVOPS ================= -->
-    <g transform="translate(534, 0)">
-      <!-- Container Box -->
-      <rect x="0" y="0" width="250" height="212" rx="10" fill="#0B1120" stroke="url(#colBorderGreen)" stroke-width="1" />
-      
-      <!-- Category Header -->
-      <text x="14" y="24" fill="#34D399" class="code-font" font-size="11.5" font-weight="700" letter-spacing="0.5">03 // IA, AGENTES &amp; DEVOPS</text>
-      <line x1="14" y1="36" x2="236" y2="36" stroke="#1E293B" stroke-width="0.8" />
-
-      <!-- Tech Pills -->
-      <!-- Item 1 -->
-      <g transform="translate(14, 46)">
-        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
-        <circle cx="12" cy="13" r="3.5" fill="#A855F7" />
-        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">OpenAI &amp; Claude APIs</text>
-      </g>
-
-      <!-- Item 2 -->
-      <g transform="translate(14, 78)">
-        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
-        <circle cx="12" cy="13" r="3.5" fill="#EA4B71" />
-        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">n8n Multi-Channel Flows</text>
-      </g>
-
-      <!-- Item 3 -->
-      <g transform="translate(14, 110)">
-        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
-        <circle cx="12" cy="13" r="3.5" fill="#008CDD" />
-        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Stripe Billing &amp; Webhooks</text>
-      </g>
-
-      <!-- Item 4 -->
-      <g transform="translate(14, 142)">
-        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
-        <circle cx="12" cy="13" r="3.5" fill="#2496ED" />
-        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Docker Containers &amp; Edge</text>
-      </g>
-
-      <!-- Item 5 -->
-      <g transform="translate(14, 174)">
-        <rect x="0" y="0" width="222" height="26" rx="6" fill="#070D1A" stroke="#1E293B" stroke-width="0.8" />
-        <circle cx="12" cy="13" r="3.5" fill="#F05032" />
-        <text x="24" y="17" fill="#F8FAFC" class="code-font" font-size="11" font-weight="600">Git &amp; GitHub Actions CI</text>
-      </g>
-    </g>
-
   </g>
 </svg>

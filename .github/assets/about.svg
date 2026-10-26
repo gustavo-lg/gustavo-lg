@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 330" width="100%" height="100%" role="img" aria-labelledby="about-title about-desc">
+  <title id="about-title">Sobre mim e terminal de diagnóstico</title>
+  <desc id="about-desc">Desenvolvedor Fullstack com foco em soluções escaláveis, SaaS de alta performance e automações inteligentes com IA. Combino código limpo com arquiteturas modernas para levar ideias complexas à produção com velocidade e confiabilidade.</desc>
+  <defs>
+    <clipPath id="card"><rect x="1" y="1" width="838" height="328" rx="20" /></clipPath>
+
+    <linearGradient id="gFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.11" />
+      <stop offset="1" stop-color="#fff" stop-opacity="0.03" />
+    </linearGradient>
+    <linearGradient id="gStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.36" />
+      <stop offset="0.45" stop-color="#fff" stop-opacity="0.06" />
+      <stop offset="1" stop-color="#fff" stop-opacity="0.16" />
+    </linearGradient>
+    <linearGradient id="gGlint" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.55" />
+      <stop offset="1" stop-color="#fff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="gAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#64D2FF" />
+      <stop offset="1" stop-color="#0A84FF" />
+    </linearGradient>
+    <linearGradient id="gSweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#64D2FF" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#64D2FF" stop-opacity="1" />
+      <stop offset="1" stop-color="#64D2FF" stop-opacity="0" />
+    </linearGradient>
+    <radialGradient id="orbBlue"><stop offset="0" stop-color="#0A84FF" stop-opacity="0.42" /><stop offset="1" stop-color="#0A84FF" stop-opacity="0" /></radialGradient>
+    <radialGradient id="orbIndigo"><stop offset="0" stop-color="#5E5CE6" stop-opacity="0.40" /><stop offset="1" stop-color="#5E5CE6" stop-opacity="0" /></radialGradient>
+  </defs>
+
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI Variable Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, "SF Mono", "JetBrains Mono", Consolas, Menlo, monospace; }
+
+    @keyframes drift1 { from { transform: translate(0, 0); } to { transform: translate(-80px, 40px); } }
+    @keyframes drift2 { from { transform: translate(0, 0); } to { transform: translate(90px, -40px); } }
+    .o1 { animation: drift1 16s ease-in-out infinite alternate; }
+    .o2 { animation: drift2 19s ease-in-out infinite alternate; }
+
+    @keyframes glare { 0%, 55% { transform: translateX(0); } 100% { transform: translateX(1200px); } }
+    .glare { animation: glare 12s ease-in-out infinite 2s; }
+
+    @keyframes sweep { from { transform: translateX(-260px); } to { transform: translateX(840px); } }
+    .sweep { animation: sweep 8s ease-in-out infinite 3s; }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .rise { animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+    .d1 { animation-delay: 0.1s; } .d2 { animation-delay: 0.3s; }
+    .p1 { animation-delay: 0.5s; } .p2 { animation-delay: 0.65s; } .p3 { animation-delay: 0.8s; } .p4 { animation-delay: 0.95s; }
+
+    /* Terminal: ciclo de 12s, tudo some no fim e recomeça */
+    @keyframes cycle { 0%, 92% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    .cycle { animation: cycle 12s ease-in-out infinite; }
+
+    @keyframes type1 { 0%, 3% { clip-path: inset(0 100% 0 0); } 15%, 100% { clip-path: inset(0 0 0 0); } }
+    @keyframes type2 { 0%, 62% { clip-path: inset(0 100% 0 0); } 72%, 100% { clip-path: inset(0 0 0 0); } }
+    .type1 { animation: type1 12s steps(32, end) infinite; }
+    .type2 { animation: type2 12s steps(20, end) infinite; }
+
+    @keyframes ln1 { 0%, 17% { opacity: 0; transform: translateY(6px); } 21%, 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes ln2 { 0%, 23% { opacity: 0; transform: translateY(6px); } 27%, 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes ln3 { 0%, 29% { opacity: 0; transform: translateY(6px); } 33%, 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes ln4 { 0%, 35% { opacity: 0; transform: translateY(6px); } 39%, 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes ln5 { 0%, 42% { opacity: 0; transform: translateY(6px); } 47%, 100% { opacity: 1; transform: translateY(0); } }
+    .ln1 { animation: ln1 12s ease-out infinite; }
+    .ln2 { animation: ln2 12s ease-out infinite; }
+    .ln3 { animation: ln3 12s ease-out infinite; }
+    .ln4 { animation: ln4 12s ease-out infinite; }
+    .ln5 { animation: ln5 12s ease-out infinite; }
+
+    @keyframes meter { 0%, 48% { transform: scaleX(0); } 60%, 100% { transform: scaleX(1); } }
+    .meter { transform-box: fill-box; transform-origin: left center; animation: meter 12s cubic-bezier(0.22, 1, 0.36, 1) infinite; }
+
+    @keyframes cursorShow { 0%, 62% { opacity: 0; } 63%, 100% { opacity: 1; } }
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    .cursor-show { animation: cursorShow 12s step-end infinite; }
+    .cursor { animation: blink 1s step-end infinite; }
+
+    @keyframes breathe { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+    .breathe { animation: breathe 4s ease-in-out infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .o1, .o2, .glare, .sweep, .rise, .cycle, .type1, .type2, .ln1, .ln2, .ln3, .ln4, .ln5, .meter, .cursor-show, .cursor, .breathe { animation: none !important; }
+      .sweep, .glare { opacity: 0; }
+    }
+  </style>
+
+  <rect x="1" y="1" width="838" height="328" rx="20" fill="#06080F" />
+  <g clip-path="url(#card)">
+    <circle class="o1" cx="720" cy="70" r="280" fill="url(#orbBlue)" />
+    <circle class="o2" cx="140" cy="330" r="290" fill="url(#orbIndigo)" />
+    <g transform="skewX(-20)"><rect class="glare" x="-300" y="-20" width="160" height="360" fill="url(#gGlint)" opacity="0.09" /></g>
+    <rect class="sweep" x="0" y="1" width="260" height="1.5" fill="url(#gSweep)" />
+  </g>
+  <rect x="1" y="1" width="838" height="328" rx="20" fill="none" stroke="url(#gStroke)" stroke-width="1" />
+
+  <!-- ================= JANELA DE TERMINAL ================= -->
+  <g class="rise d1" transform="translate(40, 30)">
+    <rect width="464" height="270" rx="18" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
+    <rect class="breathe" x="24" y="0.75" width="416" height="1" fill="url(#gGlint)" />
+
+    <!-- Barra de título -->
+    <circle cx="22" cy="19" r="5.5" fill="#FF5F57" />
+    <circle cx="40" cy="19" r="5.5" fill="#FEBC2E" />
+    <circle cx="58" cy="19" r="5.5" fill="#28C840" />
+    <text class="mono" x="232" y="23" fill="#8B93A7" font-size="12" text-anchor="middle">gustavo — zsh</text>
+    <line x1="1" y1="38" x2="463" y2="38" stroke="#fff" stroke-opacity="0.08" />
+
+    <g class="cycle">
+      <!-- Comando 1 -->
+      <text class="mono" x="20" y="66" fill="#64D2FF" font-size="12.5" font-weight="700">~</text>
+      <text class="mono" x="34" y="66" fill="#8B93A7" font-size="12.5">❯</text>
+      <g class="type1"><text class="mono" x="52" y="66" fill="#F5F5F7" font-size="12.5">npx @gustavo/specs --diagnostics</text></g>
+
+      <!-- Resultados -->
+      <g class="ln1"><text class="mono" x="20" y="92" fill="#30D158" font-size="12.5">✓</text><text class="mono" x="38" y="92" fill="#8B93A7" font-size="12.5">perfil</text><text class="mono" x="112" y="92" fill="#F5F5F7" font-size="12.5">Fullstack Architect &amp; AI Engineer</text></g>
+      <g class="ln2"><text class="mono" x="20" y="114" fill="#30D158" font-size="12.5">✓</text><text class="mono" x="38" y="114" fill="#8B93A7" font-size="12.5">stack</text><text class="mono" x="112" y="114" fill="#F5F5F7" font-size="12.5">Next.js, TypeScript, Supabase, Node.js</text></g>
+      <g class="ln3"><text class="mono" x="20" y="136" fill="#30D158" font-size="12.5">✓</text><text class="mono" x="38" y="136" fill="#8B93A7" font-size="12.5">agentes</text><text class="mono" x="112" y="136" fill="#F5F5F7" font-size="12.5">Claude, OpenAI, n8n multi-channel</text></g>
+      <g class="ln4"><text class="mono" x="20" y="158" fill="#30D158" font-size="12.5">✓</text><text class="mono" x="38" y="158" fill="#8B93A7" font-size="12.5">billing</text><text class="mono" x="112" y="158" fill="#F5F5F7" font-size="12.5">Stripe, webhooks, assinaturas SaaS</text></g>
+
+      <!-- Painel de status -->
+      <g class="ln5">
+        <rect x="20" y="172" width="424" height="56" rx="10" fill="#fff" fill-opacity="0.04" stroke="#fff" stroke-opacity="0.10" />
+        <text class="mono" x="36" y="194" fill="#8B93A7" font-size="12">status</text>
+        <circle cx="96" cy="190" r="3.5" fill="#30D158" />
+        <text class="mono" x="106" y="194" fill="#F5F5F7" font-size="12" font-weight="700">online</text>
+        <text class="mono" x="230" y="194" fill="#8B93A7" font-size="12">latência</text>
+        <text class="mono" x="304" y="194" fill="#64D2FF" font-size="12" font-weight="700">~18ms edge</text>
+        <text class="mono" x="36" y="216" fill="#8B93A7" font-size="12">lighthouse</text>
+        <rect x="120" y="209" width="260" height="8" rx="4" fill="#fff" fill-opacity="0.10" />
+        <rect class="meter" x="120" y="209" width="247" height="8" rx="4" fill="url(#gAccent)" />
+        <text class="mono" x="392" y="217" fill="#64D2FF" font-size="12" font-weight="700">95+</text>
+      </g>
+
+      <!-- Comando 2 -->
+      <text class="mono" x="20" y="254" fill="#64D2FF" font-size="12.5" font-weight="700">~</text>
+      <text class="mono" x="34" y="254" fill="#8B93A7" font-size="12.5">❯</text>
+      <g class="type2"><text class="mono" x="52" y="254" fill="#F5F5F7" font-size="12.5">git push origin main</text></g>
+      <g class="cursor-show"><rect class="cursor" x="206" y="242" width="8" height="15" rx="1.5" fill="#64D2FF" /></g>
+    </g>
+  </g>
+
+  <!-- ================= SOBRE MIM ================= -->
+  <g class="rise d2" transform="translate(520, 30)">
+    <rect width="280" height="270" rx="18" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
+    <rect class="breathe" x="24" y="0.75" width="232" height="1" fill="url(#gGlint)" />
+
+    <text class="sans" x="22" y="44" fill="#F5F5F7" font-size="20" font-weight="700" letter-spacing="-0.3">Sobre mim</text>
+    <rect x="22" y="54" width="28" height="3" rx="1.5" fill="url(#gAccent)" />
+
+    <g class="sans" font-size="14" fill="#D1D5DB">
+      <g class="rise p1">
+        <text x="22" y="86">Desenvolvedor Fullstack com foco</text>
+        <text x="22" y="106">em soluções escaláveis, SaaS de</text>
+      </g>
+      <g class="rise p2">
+        <text x="22" y="126">alta performance e automações</text>
+        <text x="22" y="146">inteligentes com IA.</text>
+      </g>
+    </g>
+    <g class="sans" font-size="14" fill="#A1A8B8">
+      <g class="rise p3">
+        <text x="22" y="178">Combino código limpo com</text>
+        <text x="22" y="198">arquiteturas modernas para levar</text>
+      </g>
+      <g class="rise p4">
+        <text x="22" y="218">ideias complexas à produção com</text>
+        <text x="22" y="238">velocidade e confiabilidade.</text>
+      </g>
+    </g>
+  </g>
+</svg>
