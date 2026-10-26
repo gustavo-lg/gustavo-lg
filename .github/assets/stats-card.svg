@@ -78,32 +78,40 @@
   </g>
 
   <!-- Tiles -->
-  <g class="rise d2" transform="translate(40, 66)">
+  <g transform="translate(40, 66)">
+    <g class="rise d2">
     <rect width="181" height="106" rx="16" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
     <rect class="breathe" x="20" y="0.75" width="141" height="1" fill="url(#gGlint)" />
     <text class="mono" x="18" y="46" fill="#64D2FF" font-size="30" font-weight="700">2.504+</text>
     <text class="sans" x="18" y="70" fill="#F5F5F7" font-size="14" font-weight="600">Contribuições</text>
     <text class="sans" x="18" y="90" fill="#8B93A7" font-size="12.5">Commits e entregas</text>
   </g>
-  <g class="rise d3" transform="translate(233, 66)">
+  </g>
+  <g transform="translate(233, 66)">
+    <g class="rise d3">
     <rect width="181" height="106" rx="16" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
     <rect class="breathe b2" x="20" y="0.75" width="141" height="1" fill="url(#gGlint)" />
     <text class="mono" x="18" y="46" fill="#F5F5F7" font-size="30" font-weight="700">331 dias</text>
     <text class="sans" x="18" y="70" fill="#F5F5F7" font-size="14" font-weight="600">Sequência ativa</text>
     <text class="sans" x="18" y="90" fill="#8B93A7" font-size="12.5">Consistência diária</text>
   </g>
-  <g class="rise d4" transform="translate(426, 66)">
+  </g>
+  <g transform="translate(426, 66)">
+    <g class="rise d4">
     <rect width="181" height="106" rx="16" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
     <rect class="breathe b3" x="20" y="0.75" width="141" height="1" fill="url(#gGlint)" />
     <text class="mono" x="18" y="46" fill="#F5F5F7" font-size="30" font-weight="700">50+</text>
     <text class="sans" x="18" y="70" fill="#F5F5F7" font-size="14" font-weight="600">Projetos</text>
     <text class="sans" x="18" y="90" fill="#8B93A7" font-size="12.5">SaaS e agentes de IA</text>
   </g>
-  <g class="rise d5" transform="translate(619, 66)">
+  </g>
+  <g transform="translate(619, 66)">
+    <g class="rise d5">
     <rect width="181" height="106" rx="16" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
     <rect class="breathe b4" x="20" y="0.75" width="141" height="1" fill="url(#gGlint)" />
     <text class="mono" x="18" y="46" fill="#F5F5F7" font-size="30" font-weight="700">99,9%</text>
     <text class="sans" x="18" y="70" fill="#F5F5F7" font-size="14" font-weight="600">Disponibilidade</text>
     <text class="sans" x="18" y="90" fill="#8B93A7" font-size="12.5">Lighthouse 95+</text>
+  </g>
   </g>
 </svg>

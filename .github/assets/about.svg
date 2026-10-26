@@ -98,7 +98,8 @@
   <rect x="1" y="1" width="838" height="328" rx="20" fill="none" stroke="url(#gStroke)" stroke-width="1" />
 
   <!-- ================= JANELA DE TERMINAL ================= -->
-  <g class="rise d1" transform="translate(40, 30)">
+  <g transform="translate(40, 30)">
+    <g class="rise d1">
     <rect width="464" height="270" rx="18" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
     <rect class="breathe" x="24" y="0.75" width="416" height="1" fill="url(#gGlint)" />
 
@@ -142,9 +143,11 @@
       <g class="cursor-show"><rect class="cursor" x="206" y="242" width="8" height="15" rx="1.5" fill="#64D2FF" /></g>
     </g>
   </g>
+  </g>
 
   <!-- ================= SOBRE MIM ================= -->
-  <g class="rise d2" transform="translate(520, 30)">
+  <g transform="translate(520, 30)">
+    <g class="rise d2">
     <rect width="280" height="270" rx="18" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
     <rect class="breathe" x="24" y="0.75" width="232" height="1" fill="url(#gGlint)" />
 
@@ -171,5 +174,6 @@
         <text x="22" y="238">velocidade e confiabilidade.</text>
       </g>
     </g>
+  </g>
   </g>
 </svg>

@@ -129,7 +129,8 @@ ${monthLabelsSvg}    <text class="mono" x="40" y="${startY + 9}" fill="#8B93A7" 
 ${columnsSvg}  </g>
 
   <!-- Legenda -->
-  <g class="rise d2" transform="translate(0, 208)">
+  <g transform="translate(0, 208)">
+  <g class="rise d2">
     <text class="mono" x="660" y="0" fill="#8B93A7" font-size="11" text-anchor="end">Menos</text>
     <rect x="668" y="-9" width="10" height="10" rx="3" fill="#fff" fill-opacity="0.07" />
     <rect x="682" y="-9" width="10" height="10" rx="3" fill="#64D2FF" fill-opacity="0.24" />
@@ -137,6 +138,7 @@ ${columnsSvg}  </g>
     <rect x="710" y="-9" width="10" height="10" rx="3" fill="#64D2FF" fill-opacity="0.74" />
     <rect x="724" y="-9" width="10" height="10" rx="3" fill="#64D2FF" />
     <text class="mono" x="742" y="0" fill="#8B93A7" font-size="11">Mais</text>
+  </g>
   </g>
 </svg>
 `;

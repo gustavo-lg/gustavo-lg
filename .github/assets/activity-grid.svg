@@ -49,7 +49,7 @@
     .col { animation: wave 5.5s ease-in-out infinite; }
 
     @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-    .rise { animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+    .rise { animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both; }
     .d1 { animation-delay: 0.1s; } .d2 { animation-delay: 0.3s; }
 
     @media (prefers-reduced-motion: reduce) {
@@ -573,7 +573,8 @@
   </g>
 
   <!-- Legenda -->
-  <g class="rise d2" transform="translate(0, 208)">
+  <g transform="translate(0, 208)">
+  <g class="rise d2">
     <text class="mono" x="660" y="0" fill="#8B93A7" font-size="11" text-anchor="end">Menos</text>
     <rect x="668" y="-9" width="10" height="10" rx="3" fill="#fff" fill-opacity="0.07" />
     <rect x="682" y="-9" width="10" height="10" rx="3" fill="#64D2FF" fill-opacity="0.24" />
@@ -581,5 +582,6 @@
     <rect x="710" y="-9" width="10" height="10" rx="3" fill="#64D2FF" fill-opacity="0.74" />
     <rect x="724" y="-9" width="10" height="10" rx="3" fill="#64D2FF" />
     <text class="mono" x="742" y="0" fill="#8B93A7" font-size="11">Mais</text>
+  </g>
   </g>
 </svg>

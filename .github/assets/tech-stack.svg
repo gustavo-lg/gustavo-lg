@@ -80,7 +80,8 @@
   </g>
 
   <!-- ===== Coluna 1 ===== -->
-  <g class="rise" style="animation-delay:0.25s" transform="translate(40, 72)">
+  <g transform="translate(40, 72)">
+    <g class="rise" style="animation-delay:0.25s">
     <rect width="244" height="244" rx="18" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
     <rect class="breathe" x="20" y="0.75" width="204" height="1" fill="url(#gGlint)" />
     <text class="mono" x="18" y="32" fill="#64D2FF" font-size="12" font-weight="700" letter-spacing="0.6">01 · FRONTEND &amp; UX</text>
@@ -99,9 +100,11 @@
       <circle cx="26" cy="208" r="3" fill="#64D2FF" /><text x="40" y="213">MUI &amp; Design Systems</text>
     </g>
   </g>
+  </g>
 
   <!-- ===== Coluna 2 ===== -->
-  <g class="rise" style="animation-delay:0.4s" transform="translate(298, 72)">
+  <g transform="translate(298, 72)">
+    <g class="rise" style="animation-delay:0.4s">
     <rect width="244" height="244" rx="18" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
     <rect class="breathe" style="animation-delay:1s" x="20" y="0.75" width="204" height="1" fill="url(#gGlint)" />
     <text class="mono" x="18" y="32" fill="#64D2FF" font-size="12" font-weight="700" letter-spacing="0.6">02 · BACKEND &amp; DADOS</text>
@@ -120,9 +123,11 @@
       <circle cx="26" cy="208" r="3" fill="#64D2FF" /><text x="40" y="213">Python Scripting &amp; Data</text>
     </g>
   </g>
+  </g>
 
   <!-- ===== Coluna 3 ===== -->
-  <g class="rise" style="animation-delay:0.55s" transform="translate(556, 72)">
+  <g transform="translate(556, 72)">
+    <g class="rise" style="animation-delay:0.55s">
     <rect width="244" height="244" rx="18" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
     <rect class="breathe" style="animation-delay:2s" x="20" y="0.75" width="204" height="1" fill="url(#gGlint)" />
     <text class="mono" x="18" y="32" fill="#64D2FF" font-size="12" font-weight="700" letter-spacing="0.6">03 · IA &amp; DEVOPS</text>
@@ -140,5 +145,6 @@
       <circle cx="26" cy="172" r="3" fill="#64D2FF" /><text x="40" y="177">Docker &amp; Edge</text>
       <circle cx="26" cy="208" r="3" fill="#64D2FF" /><text x="40" y="213">Git &amp; GitHub Actions CI</text>
     </g>
+  </g>
   </g>
 </svg>

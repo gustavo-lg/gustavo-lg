@@ -109,22 +109,26 @@
     </g>
 
     <!-- E-mail -->
-    <g class="rise d5" transform="translate(250, 0)">
+    <g transform="translate(250, 0)">
+      <g class="rise d5">
       <rect width="296" height="44" rx="14" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
       <g transform="translate(16, 11)" fill="none" stroke="#E5E7EB" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
         <rect x="1.5" y="4.5" width="19" height="14" rx="3" /><path d="M2.5 6.5l8.5 6 8.5-6" />
       </g>
       <text class="mono" x="46" y="27" fill="#E5E7EB" font-size="13" font-weight="600">gustavolgoncalves05@gmail.com</text>
     </g>
+    </g>
 
     <!-- LinkedIn -->
-    <g class="rise d6" transform="translate(560, 0)">
+    <g transform="translate(560, 0)">
+      <g class="rise d6">
       <rect width="156" height="44" rx="14" fill="url(#gFill)" stroke="url(#gStroke)" stroke-width="1" />
       <g transform="translate(16, 11)">
         <rect width="22" height="22" rx="5" fill="none" stroke="#E5E7EB" stroke-width="1.6" />
         <text class="sans" x="11" y="16.5" fill="#E5E7EB" font-size="12" font-weight="700" text-anchor="middle">in</text>
       </g>
       <text class="mono" x="46" y="27" fill="#E5E7EB" font-size="13" font-weight="600">/gustavo-lg</text>
+    </g>
     </g>
   </g>
 
